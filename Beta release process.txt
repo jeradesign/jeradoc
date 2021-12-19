@@ -1,0 +1,12 @@
+Build release version.
+	Create release branch.
+              git checkout -b <productName-versionNumber>
+	Copy in release icons.
+	Update "Bundle versions string, short" and "Bundle version" to <versionNumber>.
+	Build, validate.
+	Upload to TestFliteApp.com
+	Tag as-built build.
+		git tag -a <productName-versionNumber-as-built> -m “<productName versionNumber as-built”>
+        git push --all
+        git push --tags
+	Notify beta 
