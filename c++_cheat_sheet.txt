@@ -1,0 +1,3 @@
+Raw string literal: R"("""")", R"(---{foo}---)"
+
+unordered_map: Keys with the same hash code appear in the same bucket.
