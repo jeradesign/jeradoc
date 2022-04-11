@@ -19,7 +19,7 @@
 * The "+" Button in above the editor area opens the component library to add a new UI component.
 * Create code assistant view on storyboard, instead of vice-versa.
 * The Website PenIsland.com really needs CamelCase!
-* Getting a fatal ``NSUnknownKeyException "this class is not key value coding compliant for the key someInterfaceObject"`` means you renamed the variable but not the linked UI object. Use Refactor->Rename instead.
+* Getting a fatal `NSUnknownKeyException "this class is not key value coding compliant for the key someInterfaceObject"` means you renamed the variable but not the linked UI object. Use Refactor-\>Rename instead.
 * Xcode image literals! 🤯 #imageLiteral( then select an image from your project's assets. Also #colorLiteral( and #fileLiteral(
 * In Swift Playgrounds, click and hold the "Play" button and choose "Automatically" from the pop-up.
 * A white dot in an Xcode warning or error flag means Xcode thinks it can fix the problem.
@@ -45,3 +45,8 @@
 
 ## Section 9
 
+## Section 19
+
+* You can double-click (or command line "open") a binary plist file to view it in Xcode, including real-time updates!
+* Finder -\> home directory -\> Show View Options -\> Show Library Folder
+* Command-Shift-G to enter a file path works in the Open File dialog!

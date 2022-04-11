@@ -120,3 +120,12 @@ func parseJSON(_ data: Data) -> ParsedData? {
     }
 }
 ```
+
+## UITableView
+
+### UITableViewDataSource *plist-storable objects only!*
+``func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int``  
+``func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell``
+
+### UITableViewDelegate
+``func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)``  
