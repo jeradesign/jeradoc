@@ -129,3 +129,7 @@ func parseJSON(_ data: Data) -> ParsedData? {
 
 ### UITableViewDelegate
 ``func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)``  
+
+## Finding the Simulator Directory
+Stop in debugger, then type:
+`po NSHomeDirectory()`
