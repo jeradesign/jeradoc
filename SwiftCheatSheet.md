@@ -17,3 +17,6 @@
 	
 ##Logging
     let log = Logger(subsystem: "com.josh.example", category: "error")
+
+##Value Types
+	struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
