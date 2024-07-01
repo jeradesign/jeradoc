@@ -35,6 +35,8 @@
     .foregroundStyle(.white)
     .clipShape(Circle())
 
+    Spacer()
+
 ## Sheets
 
 	// Show sheet when optionalItem is non-nil
