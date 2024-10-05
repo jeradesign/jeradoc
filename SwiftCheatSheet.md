@@ -1,7 +1,161 @@
-#Swift Cheat Sheet
+# Swift Cheat Sheet
+## Strings
+	let actor = "Denzel Washington"
+	let filename = "paris.jpg"
+	let result = "⭐️ You win! ⭐️"
 
-##Generics
-	func identity<A>(_ value: A) -> A {
+	let quote = "Then he tapped a sign saying \"Believe\" and walked away."
+
+	let movie = """
+	A day in
+	the life of an
+	Apple engineer
+	"""
+	
+	actor.count // 17
+	
+	result.uppercased() // "⭐️ YOU WIN! ⭐️"
+	movie.hasPrefix("a day") // false -- case matters!
+	movie.hasSuffix(".jpg") // true
+
+## Arrays
+	var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams"]
+
+	print(presidents.count)
+	print(presidents.sorted())
+	presidents.remove(at: 5)
+	print(presidents)
+	print(presidents.contains("Washington"))
+	print(presidents.contains("Hubbard"))
+	print(presidents.reversed())
+	presidents.sort()
+	presidents.reverse()
+	
+## Dictionaries
+	let employee2 = [
+		"name": "Taylor Swift",
+		"job": "Singer",
+		"location": "Nashville" ]
+
+	print(employee2["name"]) // Optional("Taylor Swift")
+	print(employee2["job"] ?? "Unknown")
+	print(employee2["location"])
+	print(employee2["password"]) // nil
+	print(employee2["favorite color"] ?? "Unknown") // Unknown
+	print(employee2["favorite color", default: "red"] // red
+
+	let names = [true: "true", false: "false"]
+
+	print(names[true])
+
+	print(employee2["favorite ice cream flavor", default: "Vanilla"])
+
+## Tuples
+    func getUser() -> (firstName: String, lastName: String) {
+        ("Taylor", "Swift")
+    } 
+
+## Closures
+* Parameters and return type go after the "{" up to the keyword "in".
+* Parameter names are only used when calling named functions, not closures.
+* Parameter types are only needed when they can't be inferred from the closure's code.
+* () means the same thing as Void
+* Closures can't use external parameter labels
+* Shorthand parameters \$0...$n omit parameter list
+
+## Structs
+	var computedProperty: Type {
+        /* compute value */
+	}
+
+    var computedProperty: Type {
+        get {
+            /* compute value */
+        }
+        set {
+            /* mutate stuff */
+        }
+    }
+
+    var propertyObservers: Type {
+        willSet {
+            print(newValue)
+        }
+        didSet {
+            print(oldValue)
+        }
+    }
+
+### Access Control
+* open /* allow subclassing */
+* public
+* package /* multi-module package */
+* internal /* current module -- default */
+* fileprivate
+* private
+
+### Static Properties and Methods
+* self -- current *value* of a struct
+* Self -- current *type* of a struct
+* Only statics?
+    * Make it an empty enum so it can't be instantiated
+* You can make a static variable private so only the struct's static methods can access it.
+
+## Classes
+### Differences from Struct
+* Inheritance
+* No automatic memberwise initializer
+* Copies share the same data
+* Can add a deinitializer to run when final copy is destroyed
+* Constant class variables can have their variable properties changed
+
+## Protocols
+* "some Foo" -- some specific class that implements Foo. The compiler figures it out.
+* "any Foo" ???
+```
+struct User: Equatable { // Swift automatically writes piecewise equality test
+    let name: String
+}
+```
+
+## Extensions
+* Can add computed properties as well as functions
+* Protocol extensions let you provide default functionality for a protocol
+```
+extension Numeric {
+    func squared() -> Self {
+        self * self
+    }
+}
+```
+
+## Optionals
+```
+let theyMightBeGiants: [Giant?]
+let wereCertainlyDwarfs: [Dwarf]
+```
+
+### Nil Coalescing Operator
+```
+optional ?? valueIfNil
+```
+
+### Optional Chaining
+```
+let author2 = book2?.author?.first?.uppercased() ?? "A"
+```
+
+### Optional in Lieu of Do/Try/Catch
+* With guard let at top of function
+* With nil coalescing to try and provide default value on failure
+* When you genuinely don't care if the function failed or not
+```
+let user = (try? getUser(id: 23)) ?? "Error"
+```
+* See also: try! if you promise the called function will **never** throw
+
+## Generics
+	func identity\<A>(_ value: A) -> A {
 		return value
 	}
 
@@ -10,13 +164,8 @@
 		case some(Wrapped)
 	}
 
-##Computed Properties
-	var property: Type {
-		computedValue
-	}
-	
-##Logging
+## Logging
     let log = Logger(subsystem: "com.josh.example", category: "error")
 
-##Value Types
+## Value Types
 	struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
