@@ -1,13 +1,13 @@
-[GitCheatSheet.md](GitCheatSheet.md)
-LAB iOS Class Learnings.md
-LeanStartupCheatSheet.md
-MirrorCheatSheet.md
-SwiftCheatSheet.md
-SwiftUICheatSheet.md
-UnityCheatSheet.md
-UnrealCheatSheet.md
-XcodeCheatSheet.md
-discord_cheat_sheet.md
-iOSCheatSheet.md
-iOSUnitTestingCheatSheet.md
-visionOSCheatSheet.md
+* [GitCheatSheet.md](GitCheatSheet.md)
+* [LAB iOS Class Learnings.md](LAB iOS Class Learnings.md)
+* [LeanStartupCheatSheet.md](LeanStartupCheatSheet.md)
+* [MirrorCheatSheet.md](MirrorCheatSheet.md)
+* [SwiftCheatSheet.md](SwiftCheatSheet.md)
+* [SwiftUICheatSheet.md](SwiftUICheatSheet.md)
+* [UnityCheatSheet.md](UnityCheatSheet.md)
+* [UnrealCheatSheet.md](UnrealCheatSheet.md)
+* [XcodeCheatSheet.md](XcodeCheatSheet.md)
+* [discord_cheat_sheet.md](discord_cheat_sheet.md)
+* [iOSCheatSheet.md](iOSCheatSheet.md)
+* [iOSUnitTestingCheatSheet.md](iOSUnitTestingCheatSheet.md)
+* [visionOSCheatSheet.md](visionOSCheatSheet.md)
