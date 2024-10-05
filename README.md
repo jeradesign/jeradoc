@@ -1,4 +1,4 @@
-GitCheatSheet.md
+[GitCheatSheet.md](GitCheatSheet.md)
 LAB iOS Class Learnings.md
 LeanStartupCheatSheet.md
 MirrorCheatSheet.md
