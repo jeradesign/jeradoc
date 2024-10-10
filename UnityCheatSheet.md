@@ -37,3 +37,8 @@
     * Click the **Build** button.
 
 **Unbounded Apps** For unbounded apps that use ARKit features, add the **com.unity.xr.arfoundation** package to your project. To use skeletal hand tracking data, add the **com.unity.xr.hands** package to your project.
+
+## Hand Tracking
+There is one necessary GameObject to have in each hand-tracking XR scene in your app: an **XR Origin**. 
+
+To create an XR Origin, right-click in the Hierarchy window, and select the following option from the context menu.
