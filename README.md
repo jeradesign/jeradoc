@@ -1,7 +1,5 @@
 * [GitCheatSheet.md](GitCheatSheet.md)
 * [LAB iOS Class Learnings.md](LAB iOS Class Learnings.md)
-* [LeanStartupCheatSheet.md](LeanStartupCheatSheet.md)
-* [MirrorCheatSheet.md](MirrorCheatSheet.md)
 * [SwiftCheatSheet.md](SwiftCheatSheet.md)
 * [SwiftUICheatSheet.md](SwiftUICheatSheet.md)
 * [UnityCheatSheet.md](UnityCheatSheet.md)
