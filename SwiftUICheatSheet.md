@@ -24,9 +24,67 @@ var body: some View { // computed property!
 Text
 Button
 Form / Section
-VStack
-HStack
+VStack / HStack / ZStack
 NavigationStack / .navigationTitle
+Slider / Stepper / Toggle
+Picker
+List
+
+.navigationTitle("Title")
+.onSubmit({ })
+.onAppear(perform: { })
+```
+
+## Colors & Gradients
+```
+Color(.red)
+    .ignoresSafeArea()
+LinearGradient / RadialGradient / AngularGradient
+View()
+    .background(.indigo.gradient)
+```
+
+## Buttons & Images
+```
+Button("Button 3") { /* Action */ }
+    .buttonStyle(.borderedProminent)
+Button("Title", systemImage: "pencil")
+Image("imageName")
+Image(decorative: "imageName")
+Image(systemName: "pencil")
+Label("Name", systemImage: "pencil")
+    .padding()
+    .foregroundStyle(.white)
+    .background(.red)
+```
+
+## Stepper
+```
+Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+```
+
+## DatePicker
+```
+DatePicker("Wake Up", selection: $wakeUp, in: Date.now..., displayedComponents: .date)
+    .labelsHidden()
+```
+
+## List
+Form looks *very* different on macOS!<br/>
+List lets you use dynamic data without a ForEach.
+```
+List(0..<5) {
+    Text("Dynamic Row \($0)")
+}
+```
+
+## Alert
+```
+.alert(errorTitle, isPresented: $showingError) {
+    Button("Something") { } // Omit buttons entirely for default "OK"
+} message: {
+    Text(errorMessage)
+}
 ```
 
 ## #Preview

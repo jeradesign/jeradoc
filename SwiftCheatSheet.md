@@ -1,35 +1,43 @@
 # Swift Cheat Sheet
 ## Strings
-	let actor = "Denzel Washington"
-	let filename = "paris.jpg"
-	let result = "⭐️ You win! ⭐️"
+```
+let actor = "Denzel Washington"
+let filename = "paris.jpg"
+let result = "⭐️ You win! ⭐️"
 
-	let quote = "Then he tapped a sign saying \"Believe\" and walked away."
+let quote = "Then he tapped a sign saying \"Believe\" and walked away."
 
-	let movie = """
-	A day in
-	the life of an
-	Apple engineer
-	"""
-	
-	actor.count // 17
-	
-	result.uppercased() // "⭐️ YOU WIN! ⭐️"
-	movie.hasPrefix("a day") // false -- case matters!
-	movie.hasSuffix(".jpg") // true
+let movie = """
+    A day in
+    the life of an
+    Apple engineer
+    """ // whitespace ahead of lines trimmed to here
+
+actor.count // 17
+
+result.uppercased() // "⭐️ YOU WIN! ⭐️"
+movie.hasPrefix("a day") // false -- case matters!
+movie.hasSuffix(".jpg") // true
+
+string.components(separatedBy: "\n")
+string.trimmmingCharacters(in: .whitespacesAndNewlines)
+```
 
 ## Arrays
-	var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams"]
+```
+var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams"]
 
-	print(presidents.count)
-	print(presidents.sorted())
-	presidents.remove(at: 5)
-	print(presidents)
-	print(presidents.contains("Washington"))
-	print(presidents.contains("Hubbard"))
-	print(presidents.reversed())
-	presidents.sort()
-	presidents.reverse()
+print(presidents.count)
+print(presidents.sorted())
+presidents.remove(at: 5)
+print(presidents)
+print(presidents.contains("Washington"))
+print(presidents.contains("Hubbard"))
+print(presidents.reversed())
+presidents.sort()
+presidents.reverse()
+presidents.randomElement() ?? "Empty string"
+```
 	
 ## Dictionaries
 	let employee2 = [
@@ -62,6 +70,7 @@
 * () means the same thing as Void
 * Closures can't use external parameter labels
 * Shorthand parameters \$0...$n omit parameter list
+* Can use a function with the same signature in place of a closure
 
 ## Structs
 	var computedProperty: Type {
@@ -155,17 +164,28 @@ let user = (try? getUser(id: 23)) ?? "Error"
 * See also: try! if you promise the called function will **never** throw
 
 ## Generics
-	func identity\<A>(_ value: A) -> A {
-		return value
-	}
+```
+func identity\<A>(_ value: A) -> A {
+	return value
+}
 
-	enum Optional<Wrapped> {
-		case none
-		case some(Wrapped)
-	}
+enum Optional<Wrapped> {
+	case none
+	case some(Wrapped)
+}
+```
 
 ## Logging
-    let log = Logger(subsystem: "com.josh.example", category: "error")
+```
+let log = Logger(subsystem: "com.josh.example", category: "error")
+```
 
 ## Value Types
-	struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
+```
+struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
+```
+
+## Dates
+```
+DateComponents
+```

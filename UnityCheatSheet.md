@@ -16,6 +16,9 @@
 ## Inspector
 * right-click on "Transform" to reset
 
+## GameObject
+* Every GameObject has a transform
+
 # VisionOS PolySpatial Setup
 * Create new Universal 3d Project (URP)
 * Open Project Settings
