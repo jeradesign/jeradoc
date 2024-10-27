@@ -7,7 +7,7 @@
     * Model building apps vary in scale. To be sure:
         * Create a 1x1x1 meter cube in your modeling software
         * Import the cube into Unity
-        * Create a second cube in Unity (default size is 1x1x1)
+        * Create a second cube inside Unity (GameObject > 3D Object > Cube) (default size is 1x1x1 meter)
         * Verify the two cubes are the same size.
 
 ## Scene View
@@ -27,11 +27,26 @@
 * right-click on "Transform" to reset
 
 ## GameObject
-* Every GameObject has a transform component
+* Every GameObject has a **transform** component
+* And a **tag**
 
 ## MonoBehavior
 * Start() and Update()
 * [SerializeField]
+* Time.deltaTime
+* OnCollisionEnter(Collision other)
+* GetComponent\<Type>()
+* Time.time
+
+## (Old) Input Manager
+```
+float xValue = Input.GetAxis("Horizontal")
+```
+
+## Logging
+```
+Debug.Log("Message");
+```
 
 # VisionOS PolySpatial Setup
 * Create new Universal 3d Project (URP)
