@@ -1,5 +1,15 @@
 # Unity Cheat Sheet
 
+## Basics
+* (X, Y, Z) = (right, up, forward) (left-handed)
+* There is no "default unit", but...
+    * Physics system constants assume 1 unit = 1 meter
+    * Model building apps vary in scale. To be sure:
+        * Create a 1x1x1 meter cube in your modeling software
+        * Import the cube into Unity
+        * Create a second cube in Unity (default size is 1x1x1)
+        * Verify the two cubes are the same size.
+
 ## Scene View
 * ` to show the **overlay** pop-up
 * ~ to show/hide all **overlays**
@@ -17,7 +27,11 @@
 * right-click on "Transform" to reset
 
 ## GameObject
-* Every GameObject has a transform
+* Every GameObject has a transform component
+
+## MonoBehavior
+* Start() and Update()
+* [SerializeField]
 
 # VisionOS PolySpatial Setup
 * Create new Universal 3d Project (URP)
