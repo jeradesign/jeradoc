@@ -27,8 +27,12 @@
 * right-click on "Transform" to reset
 
 ## GameObject
-* Every GameObject has a **transform** component
-* And a **tag**
+* Every GameObject has:
+    * A **transform** component
+        * Translate
+        * Rotate
+    * A **tag**
+    * An **active** flag. When false object doesn't appear, and colliders and scripts don't run.
 
 ## MonoBehavior
 * Start() and Update()
@@ -37,6 +41,8 @@
 * OnCollisionEnter(Collision other)
 * GetComponent\<Type>()
 * Time.time
+* Destroy(gameObject); // Destroy(this) will destroy the script!
+
 
 ## (Old) Input Manager
 ```
