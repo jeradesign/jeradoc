@@ -87,6 +87,13 @@ List(0..<5) {
 }
 ```
 
+## Animation
+### Implicit
+```
+.scaleEffect(animationAmount)
+.blur(radius: (animationAmount - 1) * 3)
+.animation(.default, value: animationAmount)
+```
 ## #Preview
 
 ```
