@@ -49,6 +49,30 @@
 float xValue = Input.GetAxis("Horizontal")
 ```
 
+## (New) Input System
+*    using UnityEngine.InputSystem
+* Create serialized InputAction variables
+* Add bindings for each InputAction
+* Enable each InputAction
+* Use the *value* of the InputAction for gameplay
+* Disable each InputAction if/when we need to turn off input
+
+## Physics
+* Override FixedUpdate() for fixed time update callbacks for simulation
+* Multiply by Time.fixedDeltaTime to scale changes to timeslice
+* rb.AddRelativeForce(force * Time.fixedDeltaTime * Vector3.up);
+
+## Cinemachine
+* Install
+
+## Audio
+* AudioFile
+* AudioSource
+* AudioListener
+```
+if (!_audioSource.isPlaying) { _audioSource.Play() }
+```
+
 ## Logging
 ```
 Debug.Log("Message");
