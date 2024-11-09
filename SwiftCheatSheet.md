@@ -37,6 +37,9 @@ print(presidents.reversed())
 presidents.sort()
 presidents.reverse()
 presidents.randomElement() ?? "Empty string"
+presidents.removeFirst()
+presidents.removeLast()
+presidents.popLast() -> Element?
 ```
 	
 ## Dictionaries
@@ -188,4 +191,12 @@ struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
 ## Dates
 ```
 DateComponents
+```
+
+### Serialization
+```
+MyClass: Codable { }
+
+if let encoded = try? JSONEncoder().encode(object) { }
+if let decodedObject = try? JSONDecoder().decode(DecodedObjectType.self, from: encoded) { }
 ```

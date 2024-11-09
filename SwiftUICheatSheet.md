@@ -16,7 +16,7 @@ var body: some View { // computed property!
 @Binding var myBinding: Type
 @Environment(\.someName) var someName: SomeNameType // EnvironmentValues
 @MainActor
-@Observer
+@Observable
 ```
 
 ## Views
@@ -58,6 +58,16 @@ Label("Name", systemImage: "pencil")
     .background(.red)
 ```
 
+## Picker
+```
+Picker("Message", selection: $selection) {
+    Text("First").tag(0)
+    Text("Second").tag(1)
+    Text("Third").tag(2)
+}
+.pickerStyle(.segmented)
+```
+
 ## Stepper
 ```
 Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
@@ -94,6 +104,24 @@ List(0..<5) {
 .blur(radius: (animationAmount - 1) * 3)
 .animation(.default, value: animationAmount)
 ```
+
+## Classes
+```
+@Observable
+class MyDataClass
+```
+
+## Sheets
+```
+@Environment(\.dismiss) private var dismiss
+```
+
+## UserDefaults & AppStorage
+```
+UserDefaults.standard.set(tapCount, forKey: "Tap")
+@AppStorage("tapCount") private var tapCount = 0
+```
+
 ## #Preview
 
 ```
