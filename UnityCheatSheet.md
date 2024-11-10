@@ -63,7 +63,8 @@ float xValue = Input.GetAxis("Horizontal")
 * rb.AddRelativeForce(force * Time.fixedDeltaTime * Vector3.up);
 
 ## Cinemachine
-* Install
+* Install from Package Manager (Unity Registry)
+* Right-click on hierarchy, and choose Cinemachine
 
 ## Audio
 * AudioFile
@@ -71,6 +72,12 @@ float xValue = Input.GetAxis("Horizontal")
 * AudioListener
 ```
 if (!_audioSource.isPlaying) { _audioSource.Play() }
+```
+
+## SceneManager
+```
+SceneManager.sceneCountInBuildSettings
+SceneManager.LoadScene(sceneNumber)
 ```
 
 ## Logging
