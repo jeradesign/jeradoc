@@ -133,3 +133,9 @@ func parseJSON(_ data: Data) -> ParsedData? {
 ## Finding the Simulator Directory
 Stop in debugger, then type:
 `po NSHomeDirectory()`
+
+## Debugging UIKit
+```
+po [[UIWindow keyWindow] recursiveDescription]
+po [[UIWindow keyWindow] _autolayoutTrace]
+```
