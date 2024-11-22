@@ -41,7 +41,12 @@ presidents.removeFirst()
 presidents.removeLast()
 presidents.popLast() -> Element?
 ```
-	
+
+### Two-Dimensional Arrays
+```
+var a = Array(repeating: Array(repeating: 0, count: 8), count: 8)
+```
+
 ## Dictionaries
 	let employee2 = [
 		"name": "Taylor Swift",
@@ -168,7 +173,7 @@ let user = (try? getUser(id: 23)) ?? "Error"
 
 ## Generics
 ```
-func identity\<A>(_ value: A) -> A {
+func identity<A>(_ value: A) -> A {
 	return value
 }
 

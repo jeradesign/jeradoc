@@ -122,6 +122,19 @@ UserDefaults.standard.set(tapCount, forKey: "Tap")
 @AppStorage("tapCount") private var tapCount = 0
 ```
 
+## Image
+```
+Image(.example)
+    .resizable()
+    .scaledToFit()
+    .containerRelativeFrame(.horizontal) { size, axis in
+        size * 0.8
+    }
+```
+
+## VStack & LazyVStack
+* LazyVStack always takes full horizontal space
+
 ## #Preview
 
 ```
@@ -154,6 +167,10 @@ struct MapAnnotationView_Previews: PreviewProvider {
 .clipShape(Circle())
 
 Spacer()
+
+.containerRelativeFrame(.horizontal) { width, axis in
+    width * 0.6
+}
 ```
 
 ## Sheets
