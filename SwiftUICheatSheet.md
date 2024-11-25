@@ -112,7 +112,13 @@ class MyDataClass
 ```
 
 ## Sheets
+
 ```
+// Show sheet when optionalItem is non-nil
+.sheet(item: $optionalItem) { item in
+    // Build view of item
+}
+
 @Environment(\.dismiss) private var dismiss
 ```
 
@@ -134,6 +140,23 @@ Image(.example)
 
 ## VStack & LazyVStack
 * LazyVStack always takes full horizontal space
+
+## Navigation
+```
+NavigationStack(path: $path) {
+    List(0..<100) { i in
+        NavigationLink("Select \(i)", value: i)
+    }
+    .navigationDestination(for: Int.self) { selection in
+        Text("You selected \(selection)")
+    }
+    .navigationTitle($title) // editable
+    .navigationBarTitleDisplayMode(.inline) // must be inline to edit
+}
+.toolbarBackground(.blue)
+.toolbarColorScheme(.dark)
+.toolbar(.hidden, for: .navigationBar)
+```
 
 ## #Preview
 
@@ -170,15 +193,6 @@ Spacer()
 
 .containerRelativeFrame(.horizontal) { width, axis in
     width * 0.6
-}
-```
-
-## Sheets
-
-```
-// Show sheet when optionalItem is non-nil
-.sheet(item: $optionalItem) { item in
-    // Build view of item
 }
 ```
 
