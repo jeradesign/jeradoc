@@ -19,6 +19,7 @@
 * ⌥-right-button zoom in and out
 * f center on currently selected object
 * shift-F lock the view on currently selected object
+* Show/hide gizmos:![](Toggle%20visibility%20of%20all%20Gizmos%20in%20the%20Scene%20view.png)
 
 ## Hierarchy
 * drag object tree to Project to create prefab
@@ -57,6 +58,12 @@ float xValue = Input.GetAxis("Horizontal")
 * Use the *value* of the InputAction for gameplay
 * Disable each InputAction if/when we need to turn off input
 
+## Keyboard
+```
+Keyboard.current.cKey.isPressed
+Keyboard.current.cKey.wasPressedThisFrame
+```
+
 ## Physics
 * Override FixedUpdate() for fixed time update callbacks for simulation
 * Multiply by Time.fixedDeltaTime to scale changes to timeslice
@@ -67,11 +74,14 @@ float xValue = Input.GetAxis("Horizontal")
 * Right-click on hierarchy, and choose Cinemachine
 
 ## Audio
-* AudioFile
+* AudioClip
 * AudioSource
 * AudioListener
 ```
 if (!_audioSource.isPlaying) { _audioSource.Play() }
+
+_audioSource.Stop()
+_audioSource.PlayOneShot(_audioClip)
 ```
 
 ## SceneManager
@@ -80,10 +90,33 @@ SceneManager.sceneCountInBuildSettings
 SceneManager.LoadScene(sceneNumber)
 ```
 
+## Invoke
+```
+Invoke("MethodName", delayInSeconds);
+```
+
+## Particle Effects
+* Particle System is a component you add to a GameObject
+
+## Assets & Colliders
+* Check the "Convex" button to make a mesh
+
+## Post-Processing
+* Create a volume (use global volume for everything)
+* Camera -> Rendering
+
+## Lighting
+Point, spot, directional
+
+## Quitting
+Application.Quit()
+
 ## Logging
 ```
 Debug.Log("Message");
 ```
+
+------------------------------------------------------------
 
 # VisionOS PolySpatial Setup
 * Create new Universal 3d Project (URP)
