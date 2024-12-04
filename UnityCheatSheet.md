@@ -9,6 +9,7 @@
         * Import the cube into Unity
         * Create a second cube inside Unity (GameObject > 3D Object > Cube) (default size is 1x1x1 meter)
         * Verify the two cubes are the same size.
+* Project Settings -> Editor -> Enter Play Mode Settings / When entering Play Mode -> Do not reload Domain or Scene
 
 ## Scene View
 * ` to show the **overlay** pop-up
