@@ -17,6 +17,7 @@ var body: some View { // computed property!
 @Environment(\.someName) var someName: SomeNameType // EnvironmentValues
 @MainActor
 @Observable
+@Bindable
 ```
 
 ## Views
@@ -156,6 +157,11 @@ NavigationStack(path: $path) {
 .toolbarBackground(.blue)
 .toolbarColorScheme(.dark)
 .toolbar(.hidden, for: .navigationBar)
+```
+
+## ScrollView
+```
+    .scrollBounceBehavior(.basedOnSize)
 ```
 
 ## #Preview

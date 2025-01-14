@@ -201,6 +201,7 @@ DateComponents
 ### Serialization
 ```
 MyClass: Codable { }
+    enum CodingKeys: String, CodingKey { }
 
 if let encoded = try? JSONEncoder().encode(object) { }
 if let decodedObject = try? JSONDecoder().decode(DecodedObjectType.self, from: encoded) { }
