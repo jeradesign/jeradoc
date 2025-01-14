@@ -125,7 +125,7 @@ Debug.Log("Message");
 * Select “XR Plugin Management”
 * “Install XR Plugin Management” if needed
 * Select Vision Pro
-* Under Apple visionOS, select Mixed Reality
+* Under Apple visionOS, select "RealityKit with PolySpatial"
 * Install PolySpatial
 * Create a Volume Camera in your scene
     * From the **GameObjects > XR > Setup** menu or the **XR Building Blocks** overlay, click **Volume Camera**.
@@ -133,7 +133,7 @@ Debug.Log("Message");
 * Assign the volume camera for bounded or unbounded mode and adjust the dimensions (if bounded).
     * Dimensions adjust the rendering scale of your content.
     * For bounded apps, make sure something icy visible within the dimensions of the volume camera.
-* Open the **Build Settings** window (menu: **File > Build Settings**.
+* Open the **Build Profiles** window (menu: **File > Build Profiles**.
     * Select the **visionOS** platform.
     * If necessary, click **Switch Platform** to change to the visionOS platform.
     * Add and select any Scenes you want to include in the build. (For example SampleScene.)
