@@ -20,7 +20,9 @@
 * ⌥-right-button zoom in and out
 * f center on currently selected object
 * shift-F lock the view on currently selected object
-* Show/hide gizmos:![](Toggle%20visibility%20of%20all%20Gizmos%20in%20the%20Scene%20view.png)
+* cmd-shift-F align selected object with current editor view
+* cmd-shift-option-F align editor view with selected object
+* Show/hide gizmos:<br>![](Toggle%20visibility%20of%20all%20Gizmos%20in%20the%20Scene%20view.png)
 
 ## Hierarchy
 * drag object tree to Project to create prefab
