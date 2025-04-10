@@ -9,7 +9,7 @@ var body: some View { // computed property!
 
 ## @Tags
 
- ```
+```
 @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
 @State private var myVar = initialValue
 @FocusState private var isFocused: Bool
@@ -164,12 +164,12 @@ NavigationStack(path: $path) {
     .scrollBounceBehavior(.basedOnSize)
 ```
 
-## #Preview
+###Preview
 
 ```
-#Preview("Fixed size", traits: .fixedLayout(width, height) {}
-#Preview("Size that fits", traits: .sizeThatFitsLayout) {}
-#Preview("Orientation", traits: .landscapeLeft) {}
+\#Preview("Fixed size", traits: .fixedLayout(width, height) {}
+\#Preview("Size that fits", traits: .sizeThatFitsLayout) {}
+\#Preview("Orientation", traits: .landscapeLeft) {}
 ```
     
 ### Old Style
