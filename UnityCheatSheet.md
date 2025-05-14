@@ -119,6 +119,9 @@ Application.Quit()
 Debug.Log("Message");
 ```
 
+## Terrain
+* GameObject -> 3D Object -> Terrain
+
 ------------------------------------------------------------
 
 # VisionOS PolySpatial Setup
