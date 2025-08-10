@@ -198,7 +198,7 @@ struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
 DateComponents
 ```
 
-### Serialization
+## Serialization
 ```
 MyClass: Codable { }
     enum CodingKeys: String, CodingKey { }
@@ -207,9 +207,38 @@ if let encoded = try? JSONEncoder().encode(object) { }
 if let decodedObject = try? JSONDecoder().decode(DecodedObjectType.self, from: encoded) { }
 ```
 
-### Loading Data
+## Loading Data
 ```
 let (data, _) = try await URLSession.shared.data(from: url)
 let recentChangesResponse = try JSONDecoder().decode(RecentChangesResponse.self, from: data)
 recentChanges = recentChangesResponse.query.recentchanges
+```
+## SwiftData
+```
+@Model class ModelClass {
+```
+
+```
+WindowGroup {
+    ContentView()
+}
+.modelContainer(for: ModelClass.self)
+```
+
+```
+#Preview {
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: User.self, configurations: config)
+        let user = User(name: "Taylor Swift", city: "Nashville", joinDate: .now)
+        return EditUserView(user: user)
+            .modelContainer(container)
+    } catch {
+        return Text("Failed to create container: \(error.localizedDescription)")
+    }
+}
+```
+## Core Image
+```
+import CoreImage.CIFilterBuiltins
 ```
