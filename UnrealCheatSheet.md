@@ -2,7 +2,7 @@
 
 ## Basics
 
-* Left-handed Z-up coordinate system (forward = +x, right = +y)
+* (X, Y, Z) = (forward, right, up)
 * Default units: centimeters
 
 
