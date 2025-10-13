@@ -34,13 +34,14 @@
 * ``X`` constrain movement to X-axis
 * ``Y`` constrain movement to Y-axis
 * ``Z`` constrain movement to Z-axis
+* ``Ctrl-A`` "Apply" pop-up
 
-## Display Modes
-* Wireframe
-* Solid
-* Material Preview (HDRI Skybox)
-* Rendered
-* X-Ray mode (Wireframe and Solid only)
+## Display Modes (``Z`` for "pie" menu)
+* ``Z`` ``4`` Wireframe
+* ``Z`` ``6`` Solid
+* ``Z`` ``2`` Material Preview (HDRI Skybox)
+* ``Z`` ``7`` Rendered
+* ``Alt-Z`` X-Ray mode (Wireframe and Solid only)
 
 ## Rendering
 * ``F12`` to render
@@ -57,4 +58,16 @@
 * ``G`` move selected
 * ``E`` extrude
 * ``Ctrl-R`` loop cut
-* "And if you want to move the verts, always use double G to slide the verts on the edge. This will keep the plane flat."
+    * ``Wheel`` increase/decrease number of cuts
+* ``Alt-Click`` to select all the edges in the loop
+* ``Alt-Shift-Click`` to extend the selection to the edges of another loop
+* ``Shift-Z`` to constrain along X and Y axes
+* ``G G`` edge slide
+* ``A`` select all
+* ``Alt-A`` select none
+* ``Ctrl-B`` bevel
+    * ``Wheel`` increase/decrease number of segments
+    * ``V`` use vertices instead of edges?
+* ``M`` merge
+* Auto-merge icon in top right corner of window
+* ``Alt-N`` Bring up "Normals" menu
