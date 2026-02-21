@@ -249,10 +249,10 @@ recentChanges = recentChangesResponse.query.recentchanges
   * Non-isolated *non-async* functions run on the *caller*'s actor
 * Under **Swift 6.2**
   * `@concurrent` functions run on global executor whether async or not
-  * **Default Actor Isolation**
-    * All classes and fuctions run on @MainActor by default
-  * **Approachable Concurrency** — `nonisolated(nonsending)`
-    * `nonisolated` functions run on *caller's* actor whether async or not
+  * **Default Actor Isolation** (set to @MainActor for new projects)
+    * All unlabeled classes and fuctions run on specified actor
+  * **Approachable Concurrency** (on by default for new projects)
+    * `nonisolated(nonsending)` — `nonisolated` functions run on *caller's* actor whether async or not
 
 ## SwiftData
 ```
