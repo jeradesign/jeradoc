@@ -21,3 +21,8 @@ GCRequiresControllerUserInteraction
 	<true/>
 </dict>
 ```
+* Use game controller in SwiftUI View
+```
+.handlesGameControllerEvents(matching: .gamepad)
+.focused(true)
+```
