@@ -26,6 +26,35 @@ string.trimmmingCharacters(in: .whitespacesAndNewlines)
 ## Arrays
 ```
 var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams"]
+```
+### Transforming (non-mutating)
+```
+map(_:) // from Sequence
+flatMap(_:) // append elements of returned sequences individually
+compactMap() // non-nil returned elements only
+reduce(_:_:) // closure returns a new result object
+reduce(into:_:) // closure mutates inout result object
+lazy:
+```
+### Reordering
+| Mutating            | Non-Mutating         |
+| ---                 | ---                  |
+| ``sort(by:)``       | ``sorted(by:)``      |
+| ``reverse()``       | ``reversed()``       |
+| ``shuffle(using:)`` | ``shuffled(using:)`` |
+| ``partition(by:)``  |                      |
+| ``swapAt(,)``       |                      |
+
+### Splitting and Joining
+```
+split(separator:maxSplits:omittingEmptySubsequences:)
+split(maxSplits:omittingEmptySubsequences:whereSeparator) // closure
+joined(separator:)
+```
+### Differences
+```
+difference(from:by:))
+applying()
 
 print(presidents.count)
 print(presidents.sorted())
@@ -213,6 +242,18 @@ let (data, _) = try await URLSession.shared.data(from: url)
 let recentChangesResponse = try JSONDecoder().decode(RecentChangesResponse.self, from: data)
 recentChanges = recentChangesResponse.query.recentchanges
 ```
+
+## Concurrency
+* Under **Swift 6.1**
+  * Non-isolated *async* functions run on the *global* (background) executor
+  * Non-isolated *non-async* functions run on the *caller*'s actor
+* Under **Swift 6.2**
+  * `@concurrent` functions run on global executor whether async or not
+  * **Default Actor Isolation**
+    * All classes and fuctions run on @MainActor by default
+  * **Approachable Concurrency** — `nonisolated(nonsending)`
+    * `nonisolated` functions run on *caller's* actor whether async or not
+
 ## SwiftData
 ```
 @Model class ModelClass {
