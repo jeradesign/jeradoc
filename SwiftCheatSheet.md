@@ -17,7 +17,7 @@ actor.count // 17
 
 result.uppercased() // "⭐️ YOU WIN! ⭐️"
 movie.hasPrefix("a day") // false -- case matters!
-movie.hasSuffix(".jpg") // true
+filename.hasSuffix(".jpg") // true
 
 string.components(separatedBy: "\n")
 string.trimmmingCharacters(in: .whitespacesAndNewlines)
