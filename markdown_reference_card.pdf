@@ -1,0 +1,1036 @@
+%PDF-1.4
+%¿÷¢þ
+1 0 obj
+<< /PageMode /UseNone /Pages 3 0 R /Type /Catalog >>
+endobj
+2 0 obj
+<< /Author (\(anonymous\)) /CreationDate (D:20260908222244+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260908222244+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) /Title (Markdown Quick Reference Card) /Trapped /False >>
+endobj
+3 0 obj
+<< /Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages >>
+endobj
+4 0 obj
+<< /Contents 6 0 R /MediaBox [ 0 0 612 792 ] /Parent 3 0 R /Resources << /Font 7 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans << >> /Type /Page >>
+endobj
+5 0 obj
+<< /Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 3 0 R /Resources << /Font 7 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans << >> /Type /Page >>
+endobj
+6 0 obj
+<< /Length 10467 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 42 726 cm
+q
+.101961 .211765 .364706 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL (Markdown Quick Reference Card) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42 712 cm
+q
+.290196 .333333 .407843 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (A concise syntax guide optimized for a single two-sided printout.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42 685 cm
+q
+BT 1 0 0 1 0 3 Tm 15 TL /F2 12 Tf .172549 .243137 .313725 rg (1. Headers & Layout) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 539 cm
+q
+.160784 .501961 .72549 rg
+n 0 142 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 127 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 127 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 127 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 108 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Heading 1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 109 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (# Header 1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 108.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Main document or page title) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 89 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Heading 2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 90 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (## Header 2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 89.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Major section heading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 70 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Heading 3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 71 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (### Header 3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 70.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Sub-section heading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Heading 4-6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 52 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (#### H4 ##### H5 ###### H6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 51.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Deeply nested sub-headings) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 32 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Horizontal Rule) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 33 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (--- or *** or ___) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 32.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Creates a horizontal divider line) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 13 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Line Break) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 4 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 12 Tm /F3 8 Tf 10 TL (End a line with two spaces and press) Tj T* (Enter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 13.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Forces a line break without a new paragraph) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 142 m 540 142 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 142 l S
+n 540 0 m 540 142 l S
+n 0 123 m 540 123 l S
+n 0 104 m 540 104 l S
+n 0 85 m 540 85 l S
+n 0 66 m 540 66 l S
+n 0 47 m 540 47 l S
+n 0 28 m 540 28 l S
+n 110 0 m 110 142 l S
+n 300 0 m 300 142 l S
+Q
+Q
+Q
+q
+1 0 0 1 42 514 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (2. Text Emphasis) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 415 cm
+q
+.160784 .501961 .72549 rg
+n 0 95 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 80 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 80 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 80 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 61 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Bold) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 62 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (**text** or __text__) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 61.5 cm
+q
+BT 1 0 0 1 0 2.5 Tm 10.5 TL /F2 8 Tf .176471 .215686 .282353 rg (Bold text) Tj /F1 8 Tf ( \(strong importance\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 42 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Italic) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 43 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (*text* or _text_) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 42.5 cm
+q
+BT 1 0 0 1 0 2.5 Tm 10.5 TL /F4 8 Tf .176471 .215686 .282353 rg (Italic text) Tj /F1 8 Tf ( \(emphasis\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 23 cm
+q
+BT 1 0 0 1 0 3 Tm 11 TL /F2 8 Tf .176471 .215686 .282353 rg (Bold & Italic) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 24 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (***text***) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 23.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F5 8 Tf 10.5 TL (Bold and italicized text) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 4 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Strikethrough) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 5 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (~~text~~) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 4.5 cm
+q
+.176471 .215686 .282353 RG
+n 0 4.5 m 62.696 4.5 l S
+BT 1 0 0 1 0 2.5 Tm 10.5 TL /F1 8 Tf .176471 .215686 .282353 rg (Strikethrough text) Tj ( \(GFM extended\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 95 m 540 95 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 95 l S
+n 540 0 m 540 95 l S
+n 0 76 m 540 76 l S
+n 0 57 m 540 57 l S
+n 0 38 m 540 38 l S
+n 0 19 m 540 19 l S
+n 110 0 m 110 95 l S
+n 300 0 m 300 95 l S
+Q
+Q
+Q
+q
+1 0 0 1 42 390 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (3. Lists) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 269.5 cm
+q
+.160784 .501961 .72549 rg
+n 0 116.5 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 101.5 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 101.5 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 101.5 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 82.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Unordered List) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 63.5 cm
+q
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (- Item 1) Tj  T* (- Item 2) Tj  T* ( ) Tj ( ) Tj (* Sub-item 2a) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 62 cm
+q
+BT 1 0 0 1 0 23.5 Tm 10.5 TL /F1 8 Tf .176471 .215686 .282353 rg (\177 Item 1) Tj  T* (\177 Item 2) Tj  T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj (\177 Sub-item 2a \(Indent 2 or 4 spaces\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 43 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Ordered List) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 34 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (1. First item) Tj  T* (2. Second item) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 33 cm
+q
+BT 1 0 0 1 0 13 Tm 10.5 TL /F1 8 Tf .176471 .215686 .282353 rg (1. First item) Tj  T* (2. Second item \(Numbers don't have to be sequential\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 14 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Task List) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 5 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (- [x] Completed task) Tj  T* (- [ ] Incomplete task) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 4 cm
+q
+BT 1 0 0 1 0 13 Tm 10.5 TL /F1 8 Tf .176471 .215686 .282353 rg ([x] Completed task) Tj  T* ([ ] Incomplete task \(GFM extended\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 116.5 m 540 116.5 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 116.5 l S
+n 540 0 m 540 116.5 l S
+n 0 97.5 m 540 97.5 l S
+n 0 58 m 540 58 l S
+n 0 29 m 540 29 l S
+n 110 0 m 110 116.5 l S
+n 300 0 m 300 116.5 l S
+Q
+Q
+Q
+q
+1 0 0 1 42 244.5 cm
+q
+BT 1 0 0 1 0 3 Tm 15 TL /F2 12 Tf .172549 .243137 .313725 rg (4. Links & Images) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 126.5 cm
+q
+.160784 .501961 .72549 rg
+n 0 114 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 99 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 99 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 99 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 80 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Inline Link) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 81 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([Google]\(https://google.com\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 80.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (A hyperlink with custom descriptive text) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 61 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Link with Title) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 62 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([Google]\(https://google.com "Search"\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 61.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Hovering displays the title tooltip) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 42 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Anchor / ID Link) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 43 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([Section 1]\(#section-1\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 42.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Links to an internal header anchor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 23 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Image Link) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 24 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (![Alt Text]\(image.jpg\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 23.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Embeds an image. Text shows if load fails) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 4 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Linked Image) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 5 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([ ![Alt]\(img.jpg\) ]\(url\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 4.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Wraps an image inside an active clickable link) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 114 m 540 114 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 114 l S
+n 540 0 m 540 114 l S
+n 0 95 m 540 95 l S
+n 0 76 m 540 76 l S
+n 0 57 m 540 57 l S
+n 0 38 m 540 38 l S
+n 0 19 m 540 19 l S
+n 110 0 m 110 114 l S
+n 300 0 m 300 114 l S
+Q
+Q
+Q
+q
+BT /F1 8 Tf 9.6 TL ET
+.498039 .54902 .552941 rg
+BT 1 0 0 1 36 20 Tm (Markdown Reference Card \227 Print Layout) Tj T* ET
+BT 1 0 0 1 535.08 20 Tm (Page 1 of 2) Tj T* ET
+Q
+ 
+
+endstream
+endobj
+7 0 obj
+<< /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R /F5 13 0 R >>
+endobj
+8 0 obj
+<< /Length 6771 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 42 735 cm
+q
+BT 1 0 0 1 0 3 Tm 15 TL /F2 12 Tf .172549 .243137 .313725 rg (5. Blocks & Code) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 589 cm
+q
+.160784 .501961 .72549 rg
+n 0 142 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 127 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 127 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 127 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 108 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Blockquote) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 99 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (> This is a quote.) Tj  T* (> Multiple lines work.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 108.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Indents and styles block quotes from other text) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 80 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Nested Blockquote) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 71 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (> Outer quote) Tj  T* (>> Inner nested quote) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 80.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Creates a blockquote within a blockquote) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 52 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Inline Code) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 53 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (`code snippet`) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 52.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Highlights a brief phrase or command inline) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Code Block) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 4 cm
+q
+BT 1 0 0 1 0 32 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (```javascript) Tj  T* (const x = 5;) Tj  T* (console.log\(x\);) Tj  T* (```) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 23 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 13 Tm /F1 8 Tf 10.5 TL (Creates a multi-line code block with optional language syntax) Tj T* (highlighting indicator) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 142 m 540 142 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 142 l S
+n 540 0 m 540 142 l S
+n 0 123 m 540 123 l S
+n 0 95 m 540 95 l S
+n 0 67 m 540 67 l S
+n 0 48 m 540 48 l S
+n 110 0 m 110 142 l S
+n 300 0 m 300 142 l S
+Q
+Q
+Q
+q
+1 0 0 1 42 564 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (6. Tables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 453 cm
+q
+.160784 .501961 .72549 rg
+n 0 107 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 92 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 92 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 92 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 73 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Standard Table) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 54 cm
+q
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (| Header 1 | Header 2 |) Tj  T* (| --- | --- |) Tj  T* (| Cell 1 | Cell 2 |) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 73.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Creates columns and rows using pipe and dash notation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 35 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Alignment Rules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 16 cm
+q
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (| Left | Center | Right |) Tj  T* (| :--- | :---: | ---: |) Tj  T* (| Text | Text | Text |) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 4 cm
+q
+BT 1 0 0 1 0 34 Tm 10.5 TL /F1 8 Tf .176471 .215686 .282353 rg (Colons dictate text alignment within the column:) Tj  T* (\177 Left-aligned: :---) Tj  T* (\177 Centered: :---:) Tj  T* (\177 Right-aligned: ---:) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 107 m 540 107 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 107 l S
+n 540 0 m 540 107 l S
+n 0 88 m 540 88 l S
+n 0 50 m 540 50 l S
+n 110 0 m 110 107 l S
+n 300 0 m 300 107 l S
+Q
+Q
+Q
+q
+1 0 0 1 42 428 cm
+q
+BT 1 0 0 1 0 3 Tm 15 TL /F2 12 Tf .172549 .243137 .313725 rg (7. Miscellaneous & Extended Syntax) Tj T* ET
+Q
+Q
+q
+1 0 0 1 36 300 cm
+q
+.160784 .501961 .72549 rg
+n 0 124 540 -19 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 109 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Element) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 109 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Syntax Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 109 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Rendered Look / Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 90 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Footnotes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 71 cm
+q
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (Here is a note[^1].) Tj  T*  T* ([^1]: The footnote text.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 80 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 13 Tm /F1 8 Tf 10.5 TL (Creates a small superscript link to reference notes at the bottom) Tj T* (of the document) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 52 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Escaping Characters) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 53 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (\\*Not italic\\*) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 52.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Uses a backslash to render literal markdown characters) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Inline HTML) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 34 cm
+q
+BT 1 0 0 1 0 2 Tm 10 TL /F3 8 Tf .898039 .243137 .243137 rg (<) Tj (kbd) Tj (>) Tj (Ctrl) Tj (<) Tj (/kbd) Tj (>) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 23 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 13 Tm /F1 8 Tf 10.5 TL (Allows direct raw HTML formatting blocks inside markdown for) Tj T* (specific elements) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 4 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 3 Tm /F2 8 Tf 11 TL (Emoji Shortcuts) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116 5 cm
+q
+.898039 .243137 .243137 rg
+BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (:rocket: or :smile:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 306 4.5 cm
+q
+.176471 .215686 .282353 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8 Tf 10.5 TL (Supported on platforms like GitHub, Slack, and Discord) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.886275 .909804 .941176 RG
+.5 w
+n 0 124 m 540 124 l S
+n 0 0 m 540 0 l S
+n 0 0 m 0 124 l S
+n 540 0 m 540 124 l S
+n 0 105 m 540 105 l S
+n 0 67 m 540 67 l S
+n 0 48 m 540 48 l S
+n 0 19 m 540 19 l S
+n 110 0 m 110 124 l S
+n 300 0 m 300 124 l S
+Q
+Q
+Q
+q
+BT /F1 8 Tf 9.6 TL ET
+.498039 .54902 .552941 rg
+BT 1 0 0 1 36 20 Tm (Markdown Reference Card \227 Print Layout) Tj T* ET
+BT 1 0 0 1 535.08 20 Tm (Page 2 of 2) Tj T* ET
+Q
+ 
+
+endstream
+endobj
+9 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+10 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+11 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+12 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+13 0 obj
+<< /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000379 00000 n 
+0000000444 00000 n 
+0000000633 00000 n 
+0000000822 00000 n 
+0000011342 00000 n 
+0000011417 00000 n 
+0000018240 00000 n 
+0000018347 00000 n 
+0000018460 00000 n 
+0000018566 00000 n 
+0000018682 00000 n 
+trailer << /Info 2 0 R /Root 1 0 R /Size 14 /ID [<c35c69d547c4359ca688f0113e06e94b><111fd5385b8077ee5bf05fb7a2f250db>] >>
+startxref
+18802
+%%EOF
