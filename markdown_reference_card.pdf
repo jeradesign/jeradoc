@@ -78,7 +78,7 @@ q
 1 0 0 1 116 109 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (# Header 1) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (# Header 1) Tj T* ET
 Q
 Q
 q
@@ -99,7 +99,7 @@ q
 1 0 0 1 116 90 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (## Header 2) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (## Header 2) Tj T* ET
 Q
 Q
 q
@@ -120,7 +120,7 @@ q
 1 0 0 1 116 71 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (### Header 3) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (### Header 3) Tj T* ET
 Q
 Q
 q
@@ -141,7 +141,7 @@ q
 1 0 0 1 116 52 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (#### H4 ##### H5 ###### H6) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (#### H4 ##### H5 ###### H6) Tj T* ET
 Q
 Q
 q
@@ -162,7 +162,7 @@ q
 1 0 0 1 116 33 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (--- or *** or ___) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (--- or *** or ___) Tj T* ET
 Q
 Q
 q
@@ -183,7 +183,7 @@ q
 1 0 0 1 116 4 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 12 Tm /F3 8 Tf 10 TL (End a line with two spaces and press) Tj T* (Enter) Tj T* ET
+BT 1 0 0 1 0 12 Tm /F3 8.5 Tf 10 TL (End a line with two spaces and) Tj T* (press Enter) Tj T* ET
 Q
 Q
 q
@@ -259,7 +259,7 @@ q
 1 0 0 1 116 62 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (**text** or __text__) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (**text** or __text__) Tj T* ET
 Q
 Q
 q
@@ -279,7 +279,7 @@ q
 1 0 0 1 116 43 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (*text* or _text_) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (*text* or _text_) Tj T* ET
 Q
 Q
 q
@@ -298,7 +298,7 @@ q
 1 0 0 1 116 24 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (***text***) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (***text***) Tj T* ET
 Q
 Q
 q
@@ -319,7 +319,7 @@ q
 1 0 0 1 116 5 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (~~text~~) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (~~text~~) Tj T* ET
 Q
 Q
 q
@@ -393,7 +393,7 @@ Q
 q
 1 0 0 1 116 63.5 cm
 q
-BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (- Item 1) Tj  T* (- Item 2) Tj  T* ( ) Tj ( ) Tj (* Sub-item 2a) Tj T* ET
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (- Item 1) Tj  T* (- Item 2) Tj  T* ( ) Tj ( ) Tj (* Sub-item 2a) Tj T* ET
 Q
 Q
 q
@@ -412,7 +412,7 @@ Q
 q
 1 0 0 1 116 34 cm
 q
-BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (1. First item) Tj  T* (2. Second item) Tj T* ET
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (1. First item) Tj  T* (2. Second item) Tj T* ET
 Q
 Q
 q
@@ -431,7 +431,7 @@ Q
 q
 1 0 0 1 116 5 cm
 q
-BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (- [x] Completed task) Tj  T* (- [ ] Incomplete task) Tj T* ET
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (- [x] Completed task) Tj  T* (- [ ] Incomplete task) Tj T* ET
 Q
 Q
 q
@@ -502,7 +502,7 @@ q
 1 0 0 1 116 81 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([Google]\(https://google.com\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL ([Google]\(https://google.com\)) Tj T* ET
 Q
 Q
 q
@@ -523,7 +523,7 @@ q
 1 0 0 1 116 62 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([Google]\(https://google.com "Search"\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL ([Google]\(https://google.com "Find"\)) Tj T* ET
 Q
 Q
 q
@@ -544,7 +544,7 @@ q
 1 0 0 1 116 43 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([Section 1]\(#section-1\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL ([Section 1]\(#section-1\)) Tj T* ET
 Q
 Q
 q
@@ -565,7 +565,7 @@ q
 1 0 0 1 116 24 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (![Alt Text]\(image.jpg\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (![Alt Text]\(image.jpg\)) Tj T* ET
 Q
 Q
 q
@@ -586,7 +586,7 @@ q
 1 0 0 1 116 5 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL ([ ![Alt]\(img.jpg\) ]\(url\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL ([ ![Alt]\(img.jpg\) ]\(url\)) Tj T* ET
 Q
 Q
 q
@@ -676,7 +676,7 @@ Q
 q
 1 0 0 1 116 99 cm
 q
-BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (> This is a quote.) Tj  T* (> Multiple lines work.) Tj T* ET
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (> This is a quote.) Tj  T* (> Multiple lines work.) Tj T* ET
 Q
 Q
 q
@@ -696,7 +696,7 @@ Q
 q
 1 0 0 1 116 71 cm
 q
-BT 1 0 0 1 0 12 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (> Outer quote) Tj  T* (>> Inner nested quote) Tj T* ET
+BT 1 0 0 1 0 12 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (> Outer quote) Tj  T* (>> Inner nested quote) Tj T* ET
 Q
 Q
 q
@@ -717,7 +717,7 @@ q
 1 0 0 1 116 53 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (`code snippet`) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (`code snippet`) Tj T* ET
 Q
 Q
 q
@@ -737,7 +737,7 @@ Q
 q
 1 0 0 1 116 4 cm
 q
-BT 1 0 0 1 0 32 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (```javascript) Tj  T* (const x = 5;) Tj  T* (console.log\(x\);) Tj  T* (```) Tj T* ET
+BT 1 0 0 1 0 32 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (```javascript) Tj  T* (const x = 5;) Tj  T* (console.log\(x\);) Tj  T* (```) Tj T* ET
 Q
 Q
 q
@@ -810,7 +810,7 @@ Q
 q
 1 0 0 1 116 54 cm
 q
-BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (| Header 1 | Header 2 |) Tj  T* (| --- | --- |) Tj  T* (| Cell 1 | Cell 2 |) Tj T* ET
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (| Header 1 | Header 2 |) Tj  T* (| --- | --- |) Tj  T* (| Cell 1 | Cell 2 |) Tj T* ET
 Q
 Q
 q
@@ -830,7 +830,7 @@ Q
 q
 1 0 0 1 116 16 cm
 q
-BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (| Left | Center | Right |) Tj  T* (| :--- | :---: | ---: |) Tj  T* (| Text | Text | Text |) Tj T* ET
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (| Left | Center | Right |) Tj  T* (| :--- | :---: | ---: |) Tj  T* (| Text | Text | Text |) Tj T* ET
 Q
 Q
 q
@@ -899,7 +899,7 @@ Q
 q
 1 0 0 1 116 71 cm
 q
-BT 1 0 0 1 0 22 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (Here is a note[^1].) Tj  T*  T* ([^1]: The footnote text.) Tj T* ET
+BT 1 0 0 1 0 22 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (Here is a note[^1].) Tj  T*  T* ([^1]: The footnote text.) Tj T* ET
 Q
 Q
 q
@@ -920,7 +920,7 @@ q
 1 0 0 1 116 53 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (\\*Not italic\\*) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (\\*Not italic\\*) Tj T* ET
 Q
 Q
 q
@@ -940,7 +940,7 @@ Q
 q
 1 0 0 1 116 34 cm
 q
-BT 1 0 0 1 0 2 Tm 10 TL /F3 8 Tf 0.773 0.188 0.188 rg (<) Tj (kbd) Tj (>) Tj (Ctrl) Tj (<) Tj (/kbd) Tj (>) Tj T* ET
+BT 1 0 0 1 0 2 Tm 10 TL /F3 8.5 Tf 0.773 0.188 0.188 rg (<) Tj (kbd) Tj (>) Tj (Ctrl) Tj (<) Tj (/kbd) Tj (>) Tj T* ET
 Q
 Q
 q
@@ -961,7 +961,7 @@ q
 1 0 0 1 116 5 cm
 q
 0.773 0.188 0.188 rg
-BT 1 0 0 1 0 2 Tm /F3 8 Tf 10 TL (:rocket: or :smile:) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 8.5 Tf 10 TL (:rocket: or :smile:) Tj T* ET
 Q
 Q
 q
