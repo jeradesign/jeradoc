@@ -1,5 +1,7 @@
 # Swift Cheat Sheet
+
 ## Strings
+
 ```
 let actor = "Denzel Washington"
 let filename = "paris.jpg"
@@ -24,10 +26,13 @@ string.trimmmingCharacters(in: .whitespacesAndNewlines)
 ```
 
 ## Arrays
+
 ```
 var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams"]
 ```
+
 ### Transforming (non-mutating)
+
 ```
 map(_:) // from Sequence
 flatMap(_:) // append elements of returned sequences individually
@@ -36,7 +41,9 @@ reduce(_:_:) // closure returns a new result object
 reduce(into:_:) // closure mutates inout result object
 lazy:
 ```
+
 ### Reordering
+
 | Mutating            | Non-Mutating         |
 | ---                 | ---                  |
 | ``sort(by:)``       | ``sorted(by:)``      |
@@ -46,12 +53,15 @@ lazy:
 | ``swapAt(,)``       |                      |
 
 ### Splitting and Joining
+
 ```
 split(separator:maxSplits:omittingEmptySubsequences:)
 split(maxSplits:omittingEmptySubsequences:whereSeparator) // closure
 joined(separator:)
 ```
+
 ### Differences
+
 ```
 difference(from:by:))
 applying()
@@ -72,67 +82,79 @@ presidents.popLast() -> Element?
 ```
 
 ### Two-Dimensional Arrays
+
 ```
 var a = Array(repeating: Array(repeating: 0, count: 8), count: 8)
 ```
 
 ## Dictionaries
-	let employee2 = [
-		"name": "Taylor Swift",
-		"job": "Singer",
-		"location": "Nashville" ]
 
-	print(employee2["name"]) // Optional("Taylor Swift")
-	print(employee2["job"] ?? "Unknown")
-	print(employee2["location"])
-	print(employee2["password"]) // nil
-	print(employee2["favorite color"] ?? "Unknown") // Unknown
-	print(employee2["favorite color", default: "red"] // red
+```
+let employee2 = [
+	"name": "Taylor Swift",
+	"job": "Singer",
+	"location": "Nashville" ]
 
-	let names = [true: "true", false: "false"]
+print(employee2["name"]) // Optional("Taylor Swift")
+print(employee2["job"] ?? "Unknown")
+print(employee2["location"])
+print(employee2["password"]) // nil
+print(employee2["favorite color"] ?? "Unknown") // Unknown
+print(employee2["favorite color", default: "red"] // red
 
-	print(names[true])
+let names = [true: "true", false: "false"]
 
-	print(employee2["favorite ice cream flavor", default: "Vanilla"])
+print(names[true])
+
+print(employee2["favorite ice cream flavor", default: "Vanilla"])
+```
 
 ## Tuples
-    func getUser() -> (firstName: String, lastName: String) {
-        ("Taylor", "Swift")
-    } 
+
+```
+func getUser() -> (firstName: String, lastName: String) {
+    ("Taylor", "Swift")
+}
+```
 
 ## Closures
+
 * Parameters and return type go after the "{" up to the keyword "in".
 * Parameter names are only used when calling named functions, not closures.
 * Parameter types are only needed when they can't be inferred from the closure's code.
 * () means the same thing as Void
 * Closures can't use external parameter labels
-* Shorthand parameters \$0...$n omit parameter list
+* Shorthand parameters `$0`...`$n` omit parameter list
 * Can use a function with the same signature in place of a closure
 
 ## Structs
-	var computedProperty: Type {
+
+```
+var computedProperty: Type {
+    /* compute value */
+}
+
+var computedProperty: Type {
+    get {
         /* compute value */
-	}
-
-    var computedProperty: Type {
-        get {
-            /* compute value */
-        }
-        set {
-            /* mutate stuff */
-        }
     }
-
-    var propertyObservers: Type {
-        willSet {
-            print(newValue)
-        }
-        didSet {
-            print(oldValue)
-        }
+    set {
+        /* mutate stuff */
     }
+}
+
+var propertyObservers: Type {
+    willSet {
+        print(newValue)
+    }
+    didSet {
+        print(oldValue)
+    }
+}
+```
 
 ### Access Control
+
 * open /* allow subclassing */
 * public
 * package /* multi-module package */
@@ -141,6 +163,7 @@ var a = Array(repeating: Array(repeating: 0, count: 8), count: 8)
 * private
 
 ### Static Properties and Methods
+
 * self -- current *value* of a struct
 * Self -- current *type* of a struct
 * Only statics?
@@ -148,7 +171,9 @@ var a = Array(repeating: Array(repeating: 0, count: 8), count: 8)
 * You can make a static variable private so only the struct's static methods can access it.
 
 ## Classes
+
 ### Differences from Struct
+
 * Inheritance
 * No automatic memberwise initializer
 * Copies share the same data
@@ -156,8 +181,10 @@ var a = Array(repeating: Array(repeating: 0, count: 8), count: 8)
 * Constant class variables can have their variable properties changed
 
 ## Protocols
+
 * "some Foo" -- some specific class that implements Foo. The compiler figures it out.
 * "any Foo" ???
+
 ```
 struct User: Equatable { // Swift automatically writes piecewise equality test
     let name: String
@@ -165,8 +192,10 @@ struct User: Equatable { // Swift automatically writes piecewise equality test
 ```
 
 ## Extensions
+
 * Can add computed properties as well as functions
 * Protocol extensions let you provide default functionality for a protocol
+
 ```
 extension Numeric {
     func squared() -> Self {
@@ -176,31 +205,38 @@ extension Numeric {
 ```
 
 ## Optionals
+
 ```
 let theyMightBeGiants: [Giant?]
 let wereCertainlyDwarfs: [Dwarf]
 ```
 
 ### Nil Coalescing Operator
+
 ```
 optional ?? valueIfNil
 ```
 
 ### Optional Chaining
+
 ```
 let author2 = book2?.author?.first?.uppercased() ?? "A"
 ```
 
 ### Optional in Lieu of Do/Try/Catch
+
 * With guard let at top of function
 * With nil coalescing to try and provide default value on failure
 * When you genuinely don't care if the function failed or not
+
 ```
 let user = (try? getUser(id: 23)) ?? "Error"
 ```
+
 * See also: try! if you promise the called function will **never** throw
 
 ## Generics
+
 ```
 func identity<A>(_ value: A) -> A {
 	return value
@@ -213,21 +249,25 @@ enum Optional<Wrapped> {
 ```
 
 ## Logging
+
 ```
 let log = Logger(subsystem: "com.josh.example", category: "error")
 ```
 
 ## Value Types
+
 ```
 struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
 ```
 
 ## Dates
+
 ```
 DateComponents
 ```
 
 ## Serialization
+
 ```
 MyClass: Codable { }
     enum CodingKeys: String, CodingKey { }
@@ -237,6 +277,7 @@ if let decodedObject = try? JSONDecoder().decode(DecodedObjectType.self, from: e
 ```
 
 ## Loading Data
+
 ```
 let (data, _) = try await URLSession.shared.data(from: url)
 let recentChangesResponse = try JSONDecoder().decode(RecentChangesResponse.self, from: data)
@@ -244,6 +285,7 @@ recentChanges = recentChangesResponse.query.recentchanges
 ```
 
 ## Concurrency
+
 * Under **Swift 6.1**
   * Non-isolated *async* functions run on the *global* (background) executor
   * Non-isolated *non-async* functions run on the *caller*'s actor
@@ -255,6 +297,7 @@ recentChanges = recentChangesResponse.query.recentchanges
     * `nonisolated(nonsending)` — `nonisolated` functions run on *caller's* actor whether async or not
 
 ## SwiftData
+
 ```
 @Model class ModelClass {
 ```
@@ -279,7 +322,9 @@ WindowGroup {
     }
 }
 ```
+
 ## Core Image
+
 ```
 import CoreImage.CIFilterBuiltins
 ```

@@ -1,4 +1,5 @@
 # SwiftUI Cheat Sheet
+
 SwiftUI uses *structs* for UI design, but *classes* for data!
 
 ```
@@ -21,6 +22,7 @@ var body: some View { // computed property!
 ```
 
 ## Views
+
 ```
 Text
 Button
@@ -37,6 +39,7 @@ List
 ```
 
 ## Colors & Gradients
+
 ```
 Color(.red)
     .ignoresSafeArea()
@@ -46,6 +49,7 @@ View()
 ```
 
 ## Buttons & Images
+
 ```
 Button("Button 3") { /* Action */ }
     .buttonStyle(.borderedProminent)
@@ -60,6 +64,7 @@ Label("Name", systemImage: "pencil")
 ```
 
 ## Picker
+
 ```
 Picker("Message", selection: $selection) {
     Text("First").tag(0)
@@ -70,19 +75,23 @@ Picker("Message", selection: $selection) {
 ```
 
 ## Stepper
+
 ```
 Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
 ```
 
 ## DatePicker
+
 ```
 DatePicker("Wake Up", selection: $wakeUp, in: Date.now..., displayedComponents: .date)
     .labelsHidden()
 ```
 
 ## List
+
 Form looks *very* different on macOS!<br/>
 List lets you use dynamic data without a ForEach.
+
 ```
 List(0..<5) {
     Text("Dynamic Row \($0)")
@@ -90,6 +99,7 @@ List(0..<5) {
 ```
 
 ## Alert
+
 ```
 .alert(errorTitle, isPresented: $showingError) {
     Button("Something") { } // Omit buttons entirely for default "OK"
@@ -99,7 +109,9 @@ List(0..<5) {
 ```
 
 ## Animation
+
 ### Implicit
+
 ```
 .scaleEffect(animationAmount)
 .blur(radius: (animationAmount - 1) * 3)
@@ -107,6 +119,7 @@ List(0..<5) {
 ```
 
 ## Classes
+
 ```
 @Observable
 class MyDataClass
@@ -124,12 +137,14 @@ class MyDataClass
 ```
 
 ## UserDefaults & AppStorage
+
 ```
 UserDefaults.standard.set(tapCount, forKey: "Tap")
 @AppStorage("tapCount") private var tapCount = 0
 ```
 
 ## Image
+
 ```
 Image(.example)
     .resizable()
@@ -140,9 +155,11 @@ Image(.example)
 ```
 
 ## VStack & LazyVStack
+
 * LazyVStack always takes full horizontal space
 
 ## Navigation
+
 ```
 NavigationStack(path: $path) {
     List(0..<100) { i in
@@ -160,18 +177,19 @@ NavigationStack(path: $path) {
 ```
 
 ## ScrollView
+
 ```
     .scrollBounceBehavior(.basedOnSize)
 ```
 
-###Preview
+### Preview
 
 ```
-\#Preview("Fixed size", traits: .fixedLayout(width, height) {}
-\#Preview("Size that fits", traits: .sizeThatFitsLayout) {}
-\#Preview("Orientation", traits: .landscapeLeft) {}
+#Preview("Fixed size", traits: .fixedLayout(width, height) {}
+#Preview("Size that fits", traits: .sizeThatFitsLayout) {}
+#Preview("Orientation", traits: .landscapeLeft) {}
 ```
-    
+
 ### Old Style
 
 ```
@@ -203,6 +221,7 @@ Spacer()
 ```
 
 ## Debugging
+
 In your body { } :
 
 ```
@@ -210,6 +229,7 @@ let _ = Self._printChanges()
 ```
 
 ## Adding a delete button
+
 ```
     init() {
         UITextField.appearance().clearButtonMode = .whileEditing

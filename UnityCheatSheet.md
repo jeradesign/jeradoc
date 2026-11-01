@@ -1,6 +1,7 @@
 # Unity Cheat Sheet
 
 ## Basics
+
 * (X, Y, Z) = (right, up, forward) (left-handed)
 * There is no "default unit", but...
     * Physics system constants assume 1 unit = 1 meter
@@ -12,8 +13,9 @@
 * Project Settings -> Editor -> Enter Play Mode Settings / When entering Play Mode -> Do not reload Domain or Scene
 
 ## Scene View
-* ` to show the **overlay** pop-up
-* ~ to show/hide all **overlays**
+
+* `` ` `` to show the **overlay** pop-up
+* `~` to show/hide all **overlays**
 * middle-button pan
 * ⌥-left-button rotate around center of screen
 * right-button rotate around viewpoint (and wasd)
@@ -22,15 +24,18 @@
 * shift-F lock the view on currently selected object
 * cmd-shift-F align selected object with current editor view
 * cmd-shift-option-F align editor view with selected object
-* Show/hide gizmos:<br>![](Toggle%20visibility%20of%20all%20Gizmos%20in%20the%20Scene%20view.png)
+* Show/hide gizmos:<br>![Toggle visibility of all Gizmos in the Scene view](Toggle%20visibility%20of%20all%20Gizmos%20in%20the%20Scene%20view.png)
 
 ## Hierarchy
+
 * drag object tree to Project to create prefab
 
 ## Inspector
+
 * right-click on "Transform" to reset
 
 ## GameObject
+
 * Every GameObject has:
     * A **transform** component
         * Translate
@@ -39,6 +44,7 @@
     * An **active** flag. When false object doesn't appear, and colliders and scripts don't run.
 
 ## MonoBehavior
+
 * Start() and Update()
 * [SerializeField]
 * Time.deltaTime
@@ -47,14 +53,15 @@
 * Time.time
 * Destroy(gameObject); // Destroy(this) will destroy the script!
 
-
 ## (Old) Input Manager
+
 ```
 float xValue = Input.GetAxis("Horizontal")
 ```
 
 ## (New) Input System
-*    using UnityEngine.InputSystem
+
+* using UnityEngine.InputSystem
 * Create serialized InputAction variables
 * Add bindings for each InputAction
 * Enable each InputAction
@@ -62,24 +69,29 @@ float xValue = Input.GetAxis("Horizontal")
 * Disable each InputAction if/when we need to turn off input
 
 ## Keyboard
+
 ```
 Keyboard.current.cKey.isPressed
 Keyboard.current.cKey.wasPressedThisFrame
 ```
 
 ## Physics
+
 * Override FixedUpdate() for fixed time update callbacks for simulation
 * Multiply by Time.fixedDeltaTime to scale changes to timeslice
 * rb.AddRelativeForce(force * Time.fixedDeltaTime * Vector3.up);
 
 ## Cinemachine
+
 * Install from Package Manager (Unity Registry)
 * Right-click on hierarchy, and choose Cinemachine
 
 ## Audio
+
 * AudioClip
 * AudioSource
 * AudioListener
+
 ```
 if (!_audioSource.isPlaying) { _audioSource.Play() }
 
@@ -88,43 +100,53 @@ _audioSource.PlayOneShot(_audioClip)
 ```
 
 ## SceneManager
+
 ```
 SceneManager.sceneCountInBuildSettings
 SceneManager.LoadScene(sceneNumber)
 ```
 
 ## Invoke
+
 ```
 Invoke("MethodName", delayInSeconds);
 ```
 
 ## Particle Effects
+
 * Particle System is a component you add to a GameObject
 
 ## Assets & Colliders
+
 * Check the "Convex" button to make a mesh
 
 ## Post-Processing
+
 * Create a volume (use global volume for everything)
 * Camera -> Rendering
 
 ## Lighting
+
 Point, spot, directional
 
 ## Quitting
+
 Application.Quit()
 
 ## Logging
+
 ```
 Debug.Log("Message");
 ```
 
 ## Terrain
+
 * GameObject -> 3D Object -> Terrain
 
 ------------------------------------------------------------
 
 # VisionOS PolySpatial Setup
+
 * Create new Universal 3d Project (URP)
 * Open Project Settings
 * Select “XR Plugin Management”
@@ -147,6 +169,7 @@ Debug.Log("Message");
 **Unbounded Apps** For unbounded apps that use ARKit features, add the **com.unity.xr.arfoundation** package to your project. To use skeletal hand tracking data, add the **com.unity.xr.hands** package to your project.
 
 ## Hand Tracking
-There is one necessary GameObject to have in each hand-tracking XR scene in your app: an **XR Origin**. 
+
+There is one necessary GameObject to have in each hand-tracking XR scene in your app: an **XR Origin**.
 
 To create an XR Origin, right-click in the Hierarchy window, and select the following option from the context menu.

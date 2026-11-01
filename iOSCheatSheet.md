@@ -52,6 +52,7 @@ A CGRect's origin is in the upper left in UIKit. (But lower-left in default Core
 ```
     performSegue(withIdentifier: "myIdentifier", sender: self)
 ```
+
 ```
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier != "myIdentifier" {
@@ -62,7 +63,8 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
     // set up myVC here
 }
-```        
+```
+
 ```
     self.dismiss(animated: true, completion: nil)
 ```
@@ -124,17 +126,21 @@ func parseJSON(_ data: Data) -> ParsedData? {
 ## UITableView
 
 ### UITableViewDataSource *plist-storable objects only!*
+
 ``func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int``  
 ``func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell``
 
 ### UITableViewDelegate
-``func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)``  
+
+``func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)``
 
 ## Finding the Simulator Directory
+
 Stop in debugger, then type:
 `po NSHomeDirectory()`
 
 ## Debugging UIKit
+
 ```
 po [[UIWindow keyWindow] recursiveDescription]
 po [[UIWindow keyWindow] _autolayoutTrace]

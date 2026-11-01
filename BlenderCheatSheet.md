@@ -23,6 +23,7 @@
 * ``Numpad9`` rotate view 180°
 
 ## Adding Objects
+
 * 3D cursor crosshair with red and white signal
 * ``Shift-Right-Click`` move 3D cursor
 * ``Shift-S`` show selection and cursor circular menu
@@ -37,6 +38,7 @@
 * ``Ctrl-A`` "Apply" pop-up
 
 ## Display Modes (``Z`` for "pie" menu)
+
 * ``Z`` ``4`` Wireframe
 * ``Z`` ``6`` Solid
 * ``Z`` ``2`` Material Preview (HDRI Skybox)
@@ -44,12 +46,14 @@
 * ``Alt-Z`` X-Ray mode (Wireframe and Solid only)
 
 ## Rendering
+
 * ``F12`` to render
 * Principled BSDF shader
 * Right Click on Object
   * Shade Smooth
 
 ## Editing
+
 * ``Tab`` to toggle between Object and Edit mode
 * ``Ctrl-Tab`` select mode pie menu
 * ``1`` select vertices

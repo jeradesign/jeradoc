@@ -11,6 +11,7 @@ git clone https://github.com/Stephane-D/SGDK.git
 ## Set Up Your Environment
 
 Add this line to your .zshrc file (or .zshenv if you use one):
+
 ```bash
 export SGDK=$HOME/path/to/SGDK
 ```
@@ -49,6 +50,7 @@ blastem out/release/rom.bin >/dev/null
 ```
 
 Most of the other samples build and run the same way. The exceptions:
+
 * The `linkcable`, `megawifi` and `serial` samples need optional modules enabled in `$SGDK/inc/config.h`.
 * The `tmx-map` and `tmx-simple-collisions` samples fail because of Windows-style paths in their resource files. To fix, simply change the `\` characters to `/` characters in the `res/maps.res` files.
 * The `bad-apple` sample builds, but won't run in BlastEm or MAME. It will run in OpenEmu, and is _definitely_ worth running.

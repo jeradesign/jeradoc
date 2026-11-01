@@ -74,4 +74,3 @@ class MyClassTests: XCTestCase {
 ## Tips
 
 Turn off debugging for unit tests to speed up.
-
