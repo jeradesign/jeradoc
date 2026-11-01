@@ -6,7 +6,7 @@
 * [iOSUnitTestingCheatSheet.md](iOSUnitTestingCheatSheet.md)
 * [markdown_reference_card.pdf](markdown_reference_card.pdf)
 * [RealityKitCheatSheet.md](RealityKitCheatSheet.md)
-* [Running SGDK on macOS 27.md](Running%20SGDK%20on%20macOS%2027.md)
+* [Running_SGDK_on_macOS_27.md](Running_SGDK_on_macOS_27.md)
 * [shell_cheat_sheet.md](shell_cheat_sheet.md)
 * [SwiftCheatSheet.md](SwiftCheatSheet.md)
 * [SwiftUICheatSheet.md](SwiftUICheatSheet.md)
