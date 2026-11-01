@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// The theme fixes the content column at 500px, which cuts off long code lines.
+// Let it grow with the window, keeping the 270px sidebar and the theme's
+// single-column layout at 960px and below.
+@media screen and (min-width: 961px) {
+  div.wrapper {
+    width: auto;
+    max-width: 1210px;
+  }
+
+  section {
+    width: calc(100% - 300px);
+  }
+}
