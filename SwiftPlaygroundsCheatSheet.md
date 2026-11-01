@@ -1,1 +1,0 @@
-# Swift Playgrounds Cheat Sheet
