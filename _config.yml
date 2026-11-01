@@ -1,0 +1,3 @@
+title: Jera Docs
+theme: jekyll-theme-minimal
+exclude: [old, make_readme.pl]
