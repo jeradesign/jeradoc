@@ -1,3 +1,5 @@
+These are some documents I've written for my own reference over the years. They range from [a couple of stray notes on a topic](c++_cheat_sheet.txt) to [a thoroughly documented and tested process for installing a development environment](Running_SGDK_on_macOS_27.md). You are free to use any of them under the terms of the [CC0](LICENSE.txt) license.
+
 * [Blender Cheat Sheet](BlenderCheatSheet.md)
 * [C++ Cheat Sheet](c++_cheat_sheet.txt)
 * [Emacs Cheat Sheet](emacs_cheat_sheet.md)
