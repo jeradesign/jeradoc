@@ -54,3 +54,24 @@ Most of the other samples build and run the same way. The exceptions:
 * The `linkcable`, `megawifi` and `serial` samples need optional modules enabled in `$SGDK/inc/config.h`.
 * The `tmx-map` and `tmx-simple-collisions` samples fail because of Windows-style paths in their resource files. To fix, simply change the `\` characters to `/` characters in the `res/maps.res` files.
 * The `bad-apple` sample builds, but won't run in BlastEm or MAME. It will run in OpenEmu, and is _definitely_ worth running.
+
+---
+
+## *Extra Credit:* Burn a ROM Cartridge
+
+If you have a KrikZZ-compatible [FlashKit Programmer MD](https://krikzz.com/our-products/accessories/flashkitmd.html) and [ROM cartridge](https://krikzz.com/our-products/cartridges/flashkitmd.html), you can burn the rom.bin file you just built in the previous steps onto a ROM cart and play it on an actual Sega Genesis/Mega Drive!
+
+Unfortunately the KrikZZ FlashKit sofware is designed for Windows. Fortunately there is an excellent third party comnmand-line Python tool (also called "flashkit") that runs fine on the Mac. Installing it is a two-line process:
+
+```bash
+brew install pipx
+pipx install flashkit
+```
+
+Then, plug in your programmer board and enter:
+
+```bash
+flashkit write-rom -i rom.bin
+```
+
+If all goes well, you now have a ROM you can plug into your Sega Genesis (or Mega Drive) and run! When you're done, run the command `flashkit --help` to see the other things `flashkit` can do.
