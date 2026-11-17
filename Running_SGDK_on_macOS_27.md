@@ -53,7 +53,7 @@ Most of the other samples build and run the same way. The exceptions:
 
 * The `linkcable`, `megawifi` and `serial` samples need optional modules enabled in `$SGDK/inc/config.h`.
 * The `tmx-map` and `tmx-simple-collisions` samples fail because of Windows-style paths in their resource files. To fix, simply change the `\` characters to `/` characters in the `res/maps.res` files.
-* The `bad-apple` sample builds, but won't run in BlastEm or MAME. It will run in OpenEmu, and is _definitely_ worth running.
+* The `bad-apple` sample builds, but won't run in BlastEm or MAME. It _will_ run in [OpenEmu](https://openemu.org), and is _definitely_ worth running.
 
 ---
 
@@ -68,7 +68,9 @@ brew install pipx
 pipx install flashkit
 ```
 
-Then, plug in your programmer board and enter:
+Next, add `$HOME/.local/bin` to your path.
+
+Finally, plug a writable ROM cartridge into the programmer board and plug the board into your mac, then enter:
 
 ```bash
 flashkit write-rom -i rom.bin
