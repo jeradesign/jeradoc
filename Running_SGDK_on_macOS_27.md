@@ -57,23 +57,30 @@ Most of the other samples build and run the same way. The exceptions:
 
 ---
 
-## *Extra Credit:* Burn a ROM Cartridge
+## _Extra Credit:_ Burn a ROM Cartridge
 
-If you have a KrikZZ-compatible [FlashKit Programmer MD](https://krikzz.com/our-products/accessories/flashkitmd.html) and [ROM cartridge](https://krikzz.com/our-products/cartridges/flashkitmd.html), you can burn the rom.bin file you just built in the previous steps onto a ROM cart and play it on an actual Sega Genesis/Mega Drive!
+If you have a Krikzz-compatible [FlashKit Programmer MD board](https://krikzz.com/our-products/accessories/flashkitmd.html) and [ROM cartridge](https://krikzz.com/our-products/cartridges/flashkitmd.html), you can burn the rom.bin file you just built in the previous steps onto a ROM cart and play it on an actual Sega Genesis/Mega Drive!
 
-Unfortunately the KrikZZ FlashKit sofware is designed for Windows. Fortunately there is an excellent third party comnmand-line Python tool (also called "flashkit") that runs fine on the Mac. Installing it is a two-line process:
+Unfortunately the [Krikzz FlashKit software](https://krikzz.com/pub/support/flashkit-md/) is _Windows-only_. Fortunately there is an excellent third party command-line Python tool (also called "flashkit") that runs on macOS.
+
+Installation is simple:
 
 ```bash
 brew install pipx
 pipx install flashkit
+pipx ensurepath
 ```
 
-Next, add `$HOME/.local/bin` to your path.
+If you get the message "All pipx binary directories are already in PATH," you're good to go. Otherwise open a new terminal window to run with the updated PATH.
 
-Finally, plug a writable ROM cartridge into the programmer board and plug the board into your mac, then enter:
+To flash your first ROM:
 
-```bash
-flashkit write-rom -i rom.bin
-```
+1. Plug a writable ROM cartridge into the programmer board. The front of the ROM cartridge (the rounded side if the cartridge board is enclosed in a plastic shell) should face _away_ from the programmer board's USB port.
+2. Plug the board into your Mac, then enter:
 
-If all goes well, you now have a ROM you can plug into your Sega Genesis (or Mega Drive) and run! When you're done, run the command `flashkit --help` to see the other things `flashkit` can do.
+   ```bash
+   cd $SGDK/sample/basics/hello-world
+   flashkit write-rom -i out/release/rom.bin
+   ```
+
+If all goes well, you now have a cartridge you can plug into your Sega Genesis (or Mega Drive) and run! When you're done, run the command `flashkit --help` to see the other things `flashkit` can do.

@@ -1,0 +1,6 @@
+{
+  "config": {
+    // Prose paragraphs are one line each; don't flag long lines.
+    "MD013": false
+  }
+}
