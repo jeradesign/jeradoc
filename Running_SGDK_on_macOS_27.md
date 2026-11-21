@@ -59,9 +59,9 @@ Most of the other samples build and run the same way. The exceptions:
 
 ## _Extra Credit:_ Burn a ROM Cartridge
 
-If you have a Krikzz-compatible [FlashKit Programmer MD board](https://krikzz.com/our-products/accessories/flashkitmd.html) and [ROM cartridge](https://krikzz.com/our-products/cartridges/flashkitmd.html), you can burn the rom.bin file you just built in the previous steps onto a ROM cart and play it on an actual Sega Genesis/Mega Drive!
+If you have a Krikzz-compatible [FlashKit Programmer MD board](https://krikzz.com/our-products/accessories/flashkitmd.html) and [ROM cartridge](https://krikzz.com/our-products/cartridges/flashkitmd.html), you can burn the `rom.bin` file you just built in the previous steps onto a ROM cart and play it on an actual Sega Genesis/Mega Drive!
 
-Unfortunately the [Krikzz FlashKit software](https://krikzz.com/pub/support/flashkit-md/) is _Windows-only_. Fortunately there is an excellent third party command-line Python tool (also called "flashkit") that runs on macOS.
+Unfortunately the [Krikzz FlashKit software](https://krikzz.com/pub/support/flashkit-md/) is _Windows-only_. Fortunately there is an excellent third-party command-line Python tool (also called "flashkit") that runs on macOS.
 
 Installation is simple:
 
@@ -71,7 +71,7 @@ pipx install flashkit
 pipx ensurepath
 ```
 
-If you get the message "All pipx binary directories are already in PATH," you're good to go. Otherwise open a new terminal window to run with the updated PATH.
+If you get the message "All pipx binary directories are already in PATH," you're good to go. Otherwise, open a new terminal window to run with the updated PATH.
 
 To flash your first ROM:
 
