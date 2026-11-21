@@ -4,12 +4,12 @@
 
 * (X, Y, Z) = (right, up, forward) (left-handed)
 * There is no "default unit", but...
-    * Physics system constants assume 1 unit = 1 meter
-    * Model building apps vary in scale. To be sure:
-        * Create a 1x1x1 meter cube in your modeling software
-        * Import the cube into Unity
-        * Create a second cube inside Unity (GameObject > 3D Object > Cube) (default size is 1x1x1 meter)
-        * Verify the two cubes are the same size.
+  * Physics system constants assume 1 unit = 1 meter
+  * Model building apps vary in scale. To be sure:
+    * Create a 1x1x1 meter cube in your modeling software
+    * Import the cube into Unity
+    * Create a second cube inside Unity (GameObject > 3D Object > Cube) (default size is 1x1x1 meter)
+    * Verify the two cubes are the same size.
 * Project Settings -> Editor -> Enter Play Mode Settings / When entering Play Mode -> Do not reload Domain or Scene
 
 ## Scene View
@@ -36,50 +36,51 @@
 
 ## GameObject
 
-* Every GameObject has:
-    * A **transform** component
-        * Translate
-        * Rotate
-    * A **tag**
-    * An **active** flag. When false object doesn't appear, and colliders and scripts don't run.
+* Every `GameObject` has:
+  * A `transform` component
+    * `Translate`
+    * `Rotate`
+  * A `tag`
+  * An active flag: read it with `activeSelf`, set it with `SetActive(bool)`. When `false`, object doesn't appear, and colliders and scripts don't run.
+    * `activeInHierarchy` tells you whether it's actually active in the scene: it's `false` if the object or any of its parents is inactive.
 
-## MonoBehavior
+## MonoBehaviour
 
-* Start() and Update()
-* [SerializeField]
-* Time.deltaTime
-* OnCollisionEnter(Collision other)
-* GetComponent\<Type>()
-* Time.time
-* Destroy(gameObject); // Destroy(this) will destroy the script!
+* `Start()` and `Update()`
+* `[SerializeField]`
+* `Time.deltaTime`
+* `OnCollisionEnter(Collision other)`
+* `GetComponent<Type>()`
+* `Time.time`
+* `Destroy(gameObject); // Destroy(this) will destroy the script!`
 
 ## (Old) Input Manager
 
-```
+```csharp
 float xValue = Input.GetAxis("Horizontal")
 ```
 
 ## (New) Input System
 
-* using UnityEngine.InputSystem
-* Create serialized InputAction variables
-* Add bindings for each InputAction
-* Enable each InputAction
-* Use the *value* of the InputAction for gameplay
-* Disable each InputAction if/when we need to turn off input
+* `using UnityEngine.InputSystem`
+* Create serialized `InputAction` variables
+* Add bindings for each `InputAction`
+* Enable each `InputAction`
+* Use the *value* of the `InputAction` for gameplay
+* Disable each `InputAction` if/when we need to turn off input
 
 ## Keyboard
 
-```
+```csharp
 Keyboard.current.cKey.isPressed
 Keyboard.current.cKey.wasPressedThisFrame
 ```
 
 ## Physics
 
-* Override FixedUpdate() for fixed time update callbacks for simulation
-* Multiply by Time.fixedDeltaTime to scale changes to timeslice
-* rb.AddRelativeForce(force * Time.fixedDeltaTime * Vector3.up);
+* Override `FixedUpdate()` for fixed time update callbacks for simulation
+* Multiply by `Time.fixedDeltaTime` to scale changes to timeslice
+* `rb.AddRelativeForce(force * Time.fixedDeltaTime * Vector3.up);`
 
 ## Cinemachine
 
@@ -88,11 +89,11 @@ Keyboard.current.cKey.wasPressedThisFrame
 
 ## Audio
 
-* AudioClip
-* AudioSource
-* AudioListener
+* `AudioClip`
+* `AudioSource`
+* `AudioListener`
 
-```
+```csharp
 if (!_audioSource.isPlaying) { _audioSource.Play() }
 
 _audioSource.Stop()
@@ -101,14 +102,14 @@ _audioSource.PlayOneShot(_audioClip)
 
 ## SceneManager
 
-```
+```csharp
 SceneManager.sceneCountInBuildSettings
 SceneManager.LoadScene(sceneNumber)
 ```
 
 ## Invoke
 
-```
+```csharp
 Invoke("MethodName", delayInSeconds);
 ```
 
@@ -131,11 +132,11 @@ Point, spot, directional
 
 ## Quitting
 
-Application.Quit()
+`Application.Quit()`
 
 ## Logging
 
-```
+```csharp
 Debug.Log("Message");
 ```
 
@@ -145,7 +146,7 @@ Debug.Log("Message");
 
 ------------------------------------------------------------
 
-# VisionOS PolySpatial Setup
+## VisionOS PolySpatial Setup
 
 * Create new Universal 3d Project (URP)
 * Open Project Settings
@@ -155,21 +156,15 @@ Debug.Log("Message");
 * Under Apple visionOS, select "RealityKit with PolySpatial"
 * Install PolySpatial
 * Create a Volume Camera in your scene
-    * From the **GameObjects > XR > Setup** menu or the **XR Building Blocks** overlay, click **Volume Camera**.
-    * Add a **VolumeCameraWindowConfiguration** asset to your project with **Create > PolySpatial > Volume Camera Window Configuration**. You must store this asset in one of your project's **Resources** folders.
+  * From the **GameObjects > XR > Setup** menu or the **XR Building Blocks** overlay, click **Volume Camera**.
+  * Add a **VolumeCameraWindowConfiguration** asset to your project with **Create > PolySpatial > Volume Camera Window Configuration**. You must store this asset in one of your project's **Resources** folders.
 * Assign the volume camera for bounded or unbounded mode and adjust the dimensions (if bounded).
-    * Dimensions adjust the rendering scale of your content.
-    * For bounded apps, make sure something icy visible within the dimensions of the volume camera.
-* Open the **Build Profiles** window (menu: **File > Build Profiles**.
-    * Select the **visionOS** platform.
-    * If necessary, click **Switch Platform** to change to the visionOS platform.
-    * Add and select any Scenes you want to include in the build. (For example SampleScene.)
-    * Click the **Build** button.
+  * Dimensions adjust the rendering scale of your content.
+  * For bounded apps, make sure something is visible within the dimensions of the volume camera.
+* Open the **Build Profiles** window (menu: **File > Build Profiles**).
+  * Select the **visionOS** platform.
+  * If necessary, click **Switch Platform** to change to the visionOS platform.
+  * Add and select any Scenes you want to include in the build. (For example SampleScene.)
+  * Click the **Build** button.
 
-**Unbounded Apps** For unbounded apps that use ARKit features, add the **com.unity.xr.arfoundation** package to your project. To use skeletal hand tracking data, add the **com.unity.xr.hands** package to your project.
-
-## Hand Tracking
-
-There is one necessary GameObject to have in each hand-tracking XR scene in your app: an **XR Origin**.
-
-To create an XR Origin, right-click in the Hierarchy window, and select the following option from the context menu.
+**Unbounded Apps** For unbounded apps that use ARKit features, add the `com.unity.xr.arfoundation` package to your project. To use skeletal hand tracking data, add the `com.unity.xr.hands` package to your project.

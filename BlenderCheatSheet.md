@@ -62,7 +62,7 @@
 * ``G`` move selected
 * ``E`` extrude
 * ``Ctrl-R`` loop cut
-    * ``Wheel`` increase/decrease number of cuts
+  * ``Wheel`` increase/decrease number of cuts
 * ``Alt-Click`` to select all the edges in the loop
 * ``Alt-Shift-Click`` to extend the selection to the edges of another loop
 * ``Shift-Z`` to constrain along X and Y axes
@@ -70,8 +70,8 @@
 * ``A`` select all
 * ``Alt-A`` select none
 * ``Ctrl-B`` bevel
-    * ``Wheel`` increase/decrease number of segments
-    * ``V`` use vertices instead of edges?
+  * ``Wheel`` increase/decrease number of segments
+  * ``V`` use vertices instead of edges?
 * ``M`` merge
 * Auto-merge icon in top right corner of window
 * ``Alt-N`` Bring up "Normals" menu

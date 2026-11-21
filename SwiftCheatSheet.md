@@ -2,7 +2,7 @@
 
 ## Strings
 
-```
+```swift
 let actor = "Denzel Washington"
 let filename = "paris.jpg"
 let result = "⭐️ You win! ⭐️"
@@ -22,18 +22,18 @@ movie.hasPrefix("a day") // false -- case matters!
 filename.hasSuffix(".jpg") // true
 
 string.components(separatedBy: "\n")
-string.trimmmingCharacters(in: .whitespacesAndNewlines)
+string.trimmingCharacters(in: .whitespacesAndNewlines)
 ```
 
 ## Arrays
 
-```
+```swift
 var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams"]
 ```
 
 ### Transforming (non-mutating)
 
-```
+```swift
 map(_:) // from Sequence
 flatMap(_:) // append elements of returned sequences individually
 compactMap() // non-nil returned elements only
@@ -54,7 +54,7 @@ lazy:
 
 ### Splitting and Joining
 
-```
+```swift
 split(separator:maxSplits:omittingEmptySubsequences:)
 split(maxSplits:omittingEmptySubsequences:whereSeparator) // closure
 joined(separator:)
@@ -62,8 +62,8 @@ joined(separator:)
 
 ### Differences
 
-```
-difference(from:by:))
+```swift
+difference(from:by:)
 applying()
 
 print(presidents.count)
@@ -83,24 +83,24 @@ presidents.popLast() -> Element?
 
 ### Two-Dimensional Arrays
 
-```
+```swift
 var a = Array(repeating: Array(repeating: 0, count: 8), count: 8)
 ```
 
 ## Dictionaries
 
-```
+```swift
 let employee2 = [
-	"name": "Taylor Swift",
-	"job": "Singer",
-	"location": "Nashville" ]
+    "name": "Taylor Swift",
+    "job": "Singer",
+    "location": "Nashville" ]
 
 print(employee2["name"]) // Optional("Taylor Swift")
 print(employee2["job"] ?? "Unknown")
 print(employee2["location"])
 print(employee2["password"]) // nil
 print(employee2["favorite color"] ?? "Unknown") // Unknown
-print(employee2["favorite color", default: "red"] // red
+print(employee2["favorite color", default: "red"]) // red
 
 let names = [true: "true", false: "false"]
 
@@ -111,7 +111,7 @@ print(employee2["favorite ice cream flavor", default: "Vanilla"])
 
 ## Tuples
 
-```
+```swift
 func getUser() -> (firstName: String, lastName: String) {
     ("Taylor", "Swift")
 }
@@ -119,17 +119,17 @@ func getUser() -> (firstName: String, lastName: String) {
 
 ## Closures
 
-* Parameters and return type go after the "{" up to the keyword "in".
+* Parameters and return type go after the `{` up to the keyword `in`.
 * Parameter names are only used when calling named functions, not closures.
 * Parameter types are only needed when they can't be inferred from the closure's code.
-* () means the same thing as Void
+* `()` means the same thing as `Void`
 * Closures can't use external parameter labels
 * Shorthand parameters `$0`...`$n` omit parameter list
 * Can use a function with the same signature in place of a closure
 
 ## Structs
 
-```
+```swift
 var computedProperty: Type {
     /* compute value */
 }
@@ -155,20 +155,20 @@ var propertyObservers: Type {
 
 ### Access Control
 
-* open /* allow subclassing */
-* public
-* package /* multi-module package */
-* internal /* current module -- default */
-* fileprivate
-* private
+* `open /* allow subclassing */`
+* `public`
+* `package /* multi-module package */`
+* `internal /* current module -- default */`
+* `fileprivate`
+* `private`
 
 ### Static Properties and Methods
 
-* self -- current *value* of a struct
-* Self -- current *type* of a struct
+* `self` -- current *value* of a struct
+* `Self` -- current *type* of a struct
 * Only statics?
-    * Make it an empty enum so it can't be instantiated
-* You can make a static variable private so only the struct's static methods can access it.
+  * Make it an empty `enum` so it can't be instantiated
+* You can make a `static` variable `private` so only the struct's `static` methods can access it.
 
 ## Classes
 
@@ -182,10 +182,10 @@ var propertyObservers: Type {
 
 ## Protocols
 
-* "some Foo" -- some specific class that implements Foo. The compiler figures it out.
-* "any Foo" ???
+* `some Foo` -- some specific class that implements Foo. The compiler figures it out.
+* `any Foo` ???
 
-```
+```swift
 struct User: Equatable { // Swift automatically writes piecewise equality test
     let name: String
 }
@@ -196,7 +196,7 @@ struct User: Equatable { // Swift automatically writes piecewise equality test
 * Can add computed properties as well as functions
 * Protocol extensions let you provide default functionality for a protocol
 
-```
+```swift
 extension Numeric {
     func squared() -> Self {
         self * self
@@ -206,69 +206,69 @@ extension Numeric {
 
 ## Optionals
 
-```
+```swift
 let theyMightBeGiants: [Giant?]
 let wereCertainlyDwarfs: [Dwarf]
 ```
 
 ### Nil Coalescing Operator
 
-```
+```swift
 optional ?? valueIfNil
 ```
 
 ### Optional Chaining
 
-```
+```swift
 let author2 = book2?.author?.first?.uppercased() ?? "A"
 ```
 
 ### Optional in Lieu of Do/Try/Catch
 
-* With guard let at top of function
+* With `guard let` at top of function
 * With nil coalescing to try and provide default value on failure
 * When you genuinely don't care if the function failed or not
 
-```
+```swift
 let user = (try? getUser(id: 23)) ?? "Error"
 ```
 
-* See also: try! if you promise the called function will **never** throw
+* See also: `try!` if you promise the called function will **never** throw
 
 ## Generics
 
-```
+```swift
 func identity<A>(_ value: A) -> A {
-	return value
+    return value
 }
 
 enum Optional<Wrapped> {
-	case none
-	case some(Wrapped)
+    case none
+    case some(Wrapped)
 }
 ```
 
 ## Logging
 
-```
+```swift
 let log = Logger(subsystem: "com.josh.example", category: "error")
 ```
 
 ## Value Types
 
-```
+```swift
 struct MyValueType: Codable, Sendable, Identifiable, Hashable {}
 ```
 
 ## Dates
 
-```
+```swift
 DateComponents
 ```
 
 ## Serialization
 
-```
+```swift
 MyClass: Codable { }
     enum CodingKeys: String, CodingKey { }
 
@@ -278,7 +278,7 @@ if let decodedObject = try? JSONDecoder().decode(DecodedObjectType.self, from: e
 
 ## Loading Data
 
-```
+```swift
 let (data, _) = try await URLSession.shared.data(from: url)
 let recentChangesResponse = try JSONDecoder().decode(RecentChangesResponse.self, from: data)
 recentChanges = recentChangesResponse.query.recentchanges
@@ -287,29 +287,29 @@ recentChanges = recentChangesResponse.query.recentchanges
 ## Concurrency
 
 * Under **Swift 6.1**
-  * Non-isolated *async* functions run on the *global* (background) executor
-  * Non-isolated *non-async* functions run on the *caller*'s actor
+  * Non-isolated `async` functions run on the *global* (background) executor
+  * Non-isolated non-`async` functions run on the *caller*'s actor
 * Under **Swift 6.2**
-  * `@concurrent` functions run on global executor whether async or not
-  * **Default Actor Isolation** (set to @MainActor for new projects)
-    * All unlabeled classes and fuctions run on specified actor
+  * `@concurrent` functions run on global executor whether `async` or not
+  * **Default Actor Isolation** (set to `@MainActor` for new projects)
+    * All unlabeled classes and functions run on specified actor
   * **Approachable Concurrency** (on by default for new projects)
-    * `nonisolated(nonsending)` — `nonisolated` functions run on *caller's* actor whether async or not
+    * `nonisolated(nonsending)` — `nonisolated` functions run on *caller's* actor whether `async` or not
 
 ## SwiftData
 
-```
+```swift
 @Model class ModelClass {
 ```
 
-```
+```swift
 WindowGroup {
     ContentView()
 }
 .modelContainer(for: ModelClass.self)
 ```
 
-```
+```swift
 #Preview {
     do {
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
@@ -325,6 +325,6 @@ WindowGroup {
 
 ## Core Image
 
-```
+```swift
 import CoreImage.CIFilterBuiltins
 ```

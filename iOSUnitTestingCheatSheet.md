@@ -7,20 +7,20 @@ Did you, by any chance, name your test method `text_something` instead of `test_
 ## Concepts
 
 * FIRST
-   * fast
-   * isolated
-   * repeatable
-   * self-verifying
-   * timely
+  * fast
+  * isolated
+  * repeatable
+  * self-verifying
+  * timely
 * AAA
-   * Arrange
-   * Act
-   * Assert
+  * Arrange
+  * Act
+  * Assert
 * FIRE
-   * Fast
-   * Isolated
-   * Repeatable
-   * Easy to test
+  * Fast
+  * Isolated
+  * Repeatable
+  * Easy to test
 
 ## CustomStringConvertible
 
@@ -58,7 +58,7 @@ Implement CustomStringConvertible protocol and add a "description" method.
 
 ## Testing a class
 
-```
+```swift
 @testable import AppTarget
 
 class MyClassTests: XCTestCase {

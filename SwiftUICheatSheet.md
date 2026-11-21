@@ -2,7 +2,7 @@
 
 SwiftUI uses *structs* for UI design, but *classes* for data!
 
-```
+```swift
 var body: some View { // computed property!
 ```
 
@@ -10,7 +10,7 @@ var body: some View { // computed property!
 
 ## @Tags
 
-```
+```swift
 @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
 @State private var myVar = initialValue
 @FocusState private var isFocused: Bool
@@ -23,7 +23,7 @@ var body: some View { // computed property!
 
 ## Views
 
-```
+```swift
 Text
 Button
 Form / Section
@@ -40,7 +40,7 @@ List
 
 ## Colors & Gradients
 
-```
+```swift
 Color(.red)
     .ignoresSafeArea()
 LinearGradient / RadialGradient / AngularGradient
@@ -50,7 +50,7 @@ View()
 
 ## Buttons & Images
 
-```
+```swift
 Button("Button 3") { /* Action */ }
     .buttonStyle(.borderedProminent)
 Button("Title", systemImage: "pencil")
@@ -65,7 +65,7 @@ Label("Name", systemImage: "pencil")
 
 ## Picker
 
-```
+```swift
 Picker("Message", selection: $selection) {
     Text("First").tag(0)
     Text("Second").tag(1)
@@ -76,13 +76,13 @@ Picker("Message", selection: $selection) {
 
 ## Stepper
 
-```
+```swift
 Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
 ```
 
 ## DatePicker
 
-```
+```swift
 DatePicker("Wake Up", selection: $wakeUp, in: Date.now..., displayedComponents: .date)
     .labelsHidden()
 ```
@@ -92,7 +92,7 @@ DatePicker("Wake Up", selection: $wakeUp, in: Date.now..., displayedComponents: 
 Form looks *very* different on macOS!<br/>
 List lets you use dynamic data without a ForEach.
 
-```
+```swift
 List(0..<5) {
     Text("Dynamic Row \($0)")
 }
@@ -100,7 +100,7 @@ List(0..<5) {
 
 ## Alert
 
-```
+```swift
 .alert(errorTitle, isPresented: $showingError) {
     Button("Something") { } // Omit buttons entirely for default "OK"
 } message: {
@@ -112,7 +112,7 @@ List(0..<5) {
 
 ### Implicit
 
-```
+```swift
 .scaleEffect(animationAmount)
 .blur(radius: (animationAmount - 1) * 3)
 .animation(.default, value: animationAmount)
@@ -120,14 +120,14 @@ List(0..<5) {
 
 ## Classes
 
-```
+```swift
 @Observable
 class MyDataClass
 ```
 
 ## Sheets
 
-```
+```swift
 // Show sheet when optionalItem is non-nil
 .sheet(item: $optionalItem) { item in
     // Build view of item
@@ -138,14 +138,14 @@ class MyDataClass
 
 ## UserDefaults & AppStorage
 
-```
+```swift
 UserDefaults.standard.set(tapCount, forKey: "Tap")
 @AppStorage("tapCount") private var tapCount = 0
 ```
 
 ## Image
 
-```
+```swift
 Image(.example)
     .resizable()
     .scaledToFit()
@@ -160,7 +160,7 @@ Image(.example)
 
 ## Navigation
 
-```
+```swift
 NavigationStack(path: $path) {
     List(0..<100) { i in
         NavigationLink("Select \(i)", value: i)
@@ -178,36 +178,36 @@ NavigationStack(path: $path) {
 
 ## ScrollView
 
-```
+```swift
     .scrollBounceBehavior(.basedOnSize)
 ```
 
 ### Preview
 
-```
-#Preview("Fixed size", traits: .fixedLayout(width, height) {}
+```swift
+#Preview("Fixed size", traits: .fixedLayout(width: 300, height: 200)) {}
 #Preview("Size that fits", traits: .sizeThatFitsLayout) {}
 #Preview("Orientation", traits: .landscapeLeft) {}
 ```
 
 ### Old Style
 
-```
+```swift
 struct MapAnnotationView_Previews: PreviewProvider {
     static let locations: [NationalParkLocation] =
-    	Bundle.main.decode("locations.json")
+        Bundle.main.decode("locations.json")
 
     static var previews: some View {
-	    MapAnnotationView(location: locations[0])
-    	    .previewLayout(.sizeThatFits)
-        	.padding()
-	}
+        MapAnnotationView(location: locations[0])
+            .previewLayout(.sizeThatFits)
+            .padding()
+    }
 }
 ```
 
 ## Tweaking Views
 
-```
+```swift
 .padding()
 .background(.black.opacity(0.50))
 .foregroundStyle(.white)
@@ -222,15 +222,15 @@ Spacer()
 
 ## Debugging
 
-In your body { } :
+In your `body { }`:
 
-```
+```swift
 let _ = Self._printChanges()
 ```
 
 ## Adding a delete button
 
-```
+```swift
     init() {
         UITextField.appearance().clearButtonMode = .whileEditing
     }

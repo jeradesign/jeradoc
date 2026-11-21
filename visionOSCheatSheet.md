@@ -18,17 +18,17 @@ Game Controllers
 
 * Use the game controller as a *game controller*
 
-  ```
+  ```xml
   GCRequiresControllerUserInteraction
   <dict>
-  	<key>visionOS</key>
-  	<true/>
+      <key>visionOS</key>
+      <true/>
   </dict>
   ```
 
 * Use game controller in SwiftUI View
 
-  ```
+  ```swift
   .handlesGameControllerEvents(matching: .gamepad)
   .focused(true)
   ```

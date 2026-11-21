@@ -1,6 +1,10 @@
 {
   "config": {
     // Prose paragraphs are one line each; don't flag long lines.
-    "MD013": false
+    "MD013": false,
+    // Allow headings that end in punctuation, such as "D'oh!".
+    "MD026": false,
+    // Allow <br> for line breaks inside list items; other inline HTML is still flagged.
+    "MD033": { "allowed_elements": ["br"] }
   }
 }

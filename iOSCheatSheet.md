@@ -20,20 +20,20 @@ There are 3 different "Supported interface orientations" settings in Info.plist.
 
 ## Save a Snapshot
 
-```
+```swift
 UIImageWriteToSavedPhotosAlbum(snapshot, self, #selector(saveImageComplete(image:err:context:)), nil)
 @objc private func saveImageComplete(image:UIImage, err:Error?, context:UnsafeMutableRawPointer?) {
 ```
 
 ## Run Code on Main Thread
 
-```
+```swift
 DispatchQueue.main.async {
     // UI code
 }
 ```
 
-```
+```swift
 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
     // your code here
 }
@@ -49,11 +49,11 @@ A CGRect's origin is in the upper left in UIKit. (But lower-left in default Core
 
 ## Segues
 
-```
+```swift
     performSegue(withIdentifier: "myIdentifier", sender: self)
 ```
 
-```
+```swift
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier != "myIdentifier" {
         return
@@ -65,7 +65,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 }
 ```
 
-```
+```swift
     self.dismiss(animated: true, completion: nil)
 ```
 
@@ -73,9 +73,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 ## Computed Properties
 
-```
+```swift
 var property: Type {
-	return aType
+    return aType
 }
 ```
 
@@ -89,7 +89,7 @@ var property: Type {
 
 ## Networking
 
-```
+```swift
 func performRequest(with urlString: String) {
     guard let url = URL(string: urlString) else {
         return
@@ -141,7 +141,7 @@ Stop in debugger, then type:
 
 ## Debugging UIKit
 
-```
+```text
 po [[UIWindow keyWindow] recursiveDescription]
 po [[UIWindow keyWindow] _autolayoutTrace]
 ```
